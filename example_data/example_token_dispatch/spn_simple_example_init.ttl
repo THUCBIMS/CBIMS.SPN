@@ -1,0 +1,156 @@
+@base <http://foo.org/myspn#>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix myspn: <http://foo.org/myspn#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix spn: <http://www.cbims.org.cn/ns/spn#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix mybim: <http://foo.org/mybim#>.
+@prefix ifc4: <http://www.cbims.org.cn/ns/ifcrdf/ifc4#>.
+
+myspn:ArcP2T_P0_T1 spn:hasArg myspn:arg_0;
+                   spn:relPlace myspn:P0;
+                   spn:relTransition myspn:T1;
+                   a spn:ArcP2T.
+myspn:ArcP2T_P0_T2 spn:hasArg myspn:arg_1;
+                   spn:relPlace myspn:P0;
+                   spn:relTransition myspn:T2;
+                   a spn:ArcP2T.
+myspn:ArcT2P_T1_P1 spn:hasArg myspn:arg_0;
+                   spn:relPlace myspn:P1;
+                   spn:relTransition myspn:T1;
+                   a spn:ArcT2P.
+myspn:ArcT2P_T2_P2 spn:hasArg myspn:arg_1;
+                   spn:relPlace myspn:P2;
+                   spn:relTransition myspn:T2;
+                   a spn:ArcT2P.
+myspn:P0 spn:colorRule myspn:sprule_0;
+         spn:initRule myspn:sprule_1;
+         a spn:Place;
+         ldp:contains mybim:IfcDoor_5606,
+                      mybim:IfcDoor_5741,
+                      mybim:IfcDoor_5613,
+                      mybim:IfcDoor_5700,
+                      mybim:IfcDoor_5783,
+                      mybim:IfcDoor_5747,
+                      mybim:IfcDoor_5925,
+                      mybim:IfcDoor_5789,
+                      mybim:IfcDoor_5815,
+                      mybim:IfcDoor_5836,
+                      mybim:IfcDoor_5946,
+                      mybim:IfcDoor_5956,
+                      mybim:IfcDoor_6139,
+                      mybim:IfcDoor_6159,
+                      mybim:IfcDoor_5961,
+                      mybim:IfcDoor_6176,
+                      mybim:IfcDoor_6206,
+                      mybim:IfcDoor_6241,
+                      mybim:IfcDoor_6216,
+                      mybim:IfcDoor_6226,
+                      mybim:IfcDoor_6236,
+                      mybim:IfcDoor_6191,
+                      mybim:IfcDoor_6251,
+                      mybim:IfcDoor_6266,
+                      mybim:IfcDoor_6246,
+                      mybim:IfcDoor_6311,
+                      mybim:IfcDoor_6459,
+                      mybim:IfcDoor_6464,
+                      mybim:IfcDoor_6306,
+                      mybim:IfcDoor_6316,
+                      mybim:IfcDoor_6484,
+                      mybim:IfcDoor_6479,
+                      mybim:IfcDoor_6489,
+                      mybim:IfcDoor_6474,
+                      mybim:IfcDoor_6530,
+                      mybim:IfcDoor_6579,
+                      mybim:IfcDoor_6584,
+                      mybim:IfcDoor_6494,
+                      mybim:IfcDoor_6633,
+                      mybim:IfcDoor_6678,
+                      mybim:IfcDoor_6628,
+                      mybim:IfcDoor_6683,
+                      mybim:IfcDoor_6673,
+                      mybim:IfcDoor_10358,
+                      mybim:IfcDoor_6693,
+                      mybim:IfcDoor_6688,
+                      mybim:IfcDoor_10404,
+                      mybim:IfcDoor_10363,
+                      mybim:IfcDoor_10411,
+                      mybim:IfcDoor_10469,
+                      mybim:IfcDoor_10434,
+                      mybim:IfcDoor_10541,
+                      mybim:IfcDoor_10531,
+                      mybim:IfcDoor_26479,
+                      mybim:IfcDoor_10536,
+                      mybim:IfcDoor_26484,
+                      mybim:IfcDoor_10524,
+                      mybim:IfcDoor_26469,
+                      mybim:IfcDoor_10427,
+                      mybim:IfcDoor_26474,
+                      mybim:IfcDoor_26514,
+                      mybim:IfcDoor_26489,
+                      mybim:IfcDoor_10546,
+                      mybim:IfcDoor_26504,
+                      mybim:IfcDoor_26499,
+                      mybim:IfcDoor_26509,
+                      mybim:IfcDoor_26519,
+                      mybim:IfcDoor_26494,
+                      mybim:IfcDoor_26733,
+                      mybim:IfcDoor_26568,
+                      mybim:IfcDoor_26578,
+                      mybim:IfcDoor_26524,
+                      mybim:IfcDoor_26628,
+                      mybim:IfcDoor_26565,
+                      mybim:IfcDoor_10439,
+                      mybim:IfcDoor_26738,
+                      mybim:IfcDoor_26573,
+                      mybim:IfcDoor_26758,
+                      mybim:IfcDoor_26743,
+                      mybim:IfcDoor_26763,
+                      mybim:IfcDoor_26748,
+                      mybim:IfcDoor_26753,
+                      mybim:IfcDoor_26798,
+                      mybim:IfcDoor_28456,
+                      mybim:IfcDoor_26788,
+                      mybim:IfcDoor_26803,
+                      mybim:IfcDoor_5831,
+                      mybim:IfcDoor_28908,
+                      mybim:IfcDoor_26793,
+                      mybim:IfcDoor_36104,
+                      mybim:IfcDoor_26780,
+                      mybim:IfcDoor_5895,
+                      mybim:IfcDoor_36174,
+                      mybim:IfcDoor_26783,
+                      mybim:IfcDoor_36203,
+                      mybim:IfcDoor_36169,
+                      mybim:IfcDoor_6663,
+                      mybim:IfcDoor_5618,
+                      mybim:IfcDoor_5915,
+                      mybim:IfcDoor_5940,
+                      mybim:IfcDoor_5870,
+                      mybim:IfcDoor_5800.
+myspn:P1 a spn:Place.
+myspn:P2 a spn:Place.
+myspn:T1 spn:guardRule myspn:sprule_2;
+         spn:hasArg myspn:arg_0;
+         a spn:Transition.
+myspn:T2 spn:guardRule myspn:sprule_3;
+         spn:hasArg myspn:arg_1;
+         a spn:Transition.
+myspn:arg_0 spn:argName "?x";
+            spn:argType ifc4:IfcDoor;
+            a spn:ArgDef.
+myspn:arg_1 spn:argName "?y";
+            spn:argType ifc4:IfcDoor;
+            a spn:ArgDef.
+myspn:ctrule_NULL a spn:ConstantRule.
+myspn:sprule_0 spn:hasSPARQL "SELECT ?TOKEN { ?TOKEN a/rdfs:subClassOf* ifc4:IfcDoor.  }";
+               a spn:SPARQLRule.
+myspn:sprule_1 spn:hasSPARQL "SELECT ?TOKEN { ?TOKEN a/rdfs:subClassOf* ifc4:IfcDoor }";
+               a spn:SPARQLRule.
+myspn:sprule_2 spn:hasSPARQL "ASK { ?x ifc4:overallHeight ?h. FILTER(?h > 1800) }";
+               a spn:SPARQLRule.
+myspn:sprule_3 spn:hasSPARQL "ASK { ?y ifc4:overallHeight ?h. FILTER(?h <= 1800) }";
+               a spn:SPARQLRule.
