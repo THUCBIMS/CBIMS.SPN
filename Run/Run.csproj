@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Xbim.Geometry.Engine.Interop" Version="5.1.254" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\CBIMS.LDP.IFC.XbimLoader\CBIMS.LDP.IFC.XbimLoader.csproj" />
+    <ProjectReference Include="..\CBIMS.LDP.IFC\CBIMS.LDP.IFC.csproj" />
+    <ProjectReference Include="..\CBIMS.SPN\CBIMS.SPN.csproj" />
+  </ItemGroup>
+
+</Project>

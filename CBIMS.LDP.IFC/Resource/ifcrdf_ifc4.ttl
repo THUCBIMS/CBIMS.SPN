@@ -1,0 +1,2723 @@
+@base <http://www.cbims.org.cn/ns/ifcrdf/ifc4#>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ifc4: <http://www.cbims.org.cn/ns/ifcrdf/ifc4#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+
+ifc4:IfcAbsorbedDoseMeasure a rdfs:Class.
+ifc4:IfcAccelerationMeasure a rdfs:Class.
+ifc4:IfcActionRequest a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcControl.
+ifc4:IfcActor a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcObject.
+ifc4:IfcActorRole a rdfs:Class.
+ifc4:IfcActuator a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcDistributionControlElement.
+ifc4:IfcActuatorType a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcDistributionControlElementType.
+ifc4:IfcAddress a rdfs:Class.
+ifc4:IfcAdvancedBrep a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcManifoldSolidBrep.
+ifc4:IfcAdvancedBrepWithVoids a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcAdvancedBrep.
+ifc4:IfcAdvancedFace a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcFaceSurface.
+ifc4:IfcAirTerminal a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcAirTerminalBox a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcFlowController.
+ifc4:IfcAirTerminalBoxType a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcFlowControllerType.
+ifc4:IfcAirTerminalType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcAirToAirHeatRecovery a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcAirToAirHeatRecoveryType a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcAlarm a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcDistributionControlElement.
+ifc4:IfcAlarmType a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcDistributionControlElementType.
+ifc4:IfcAlignment a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcLinearPositioningElement.
+ifc4:IfcAlignment2DHorizontal a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcAlignment2DHorizontalSegment a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcAlignment2DSegment.
+ifc4:IfcAlignment2DSegment a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcAlignment2DVerSegCircularArc a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcAlignment2DVerticalSegment.
+ifc4:IfcAlignment2DVerSegLine a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcAlignment2DVerticalSegment.
+ifc4:IfcAlignment2DVerSegParabolicArc a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcAlignment2DVerticalSegment.
+ifc4:IfcAlignment2DVertical a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcAlignment2DVerticalSegment a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcAlignment2DSegment.
+ifc4:IfcAlignmentCurve a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcBoundedCurve.
+ifc4:IfcAmountOfSubstanceMeasure a rdfs:Class.
+ifc4:IfcAngularVelocityMeasure a rdfs:Class.
+ifc4:IfcAnnotation a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcAnnotationFillArea a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcApplication a rdfs:Class.
+ifc4:IfcAppliedValue a rdfs:Class.
+ifc4:IfcApproval a rdfs:Class.
+ifc4:IfcApprovalRelationship a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcArbitraryClosedProfileDef a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcProfileDef.
+ifc4:IfcArbitraryOpenProfileDef a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcProfileDef.
+ifc4:IfcArbitraryProfileDefWithVoids a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcArbitraryClosedProfileDef.
+ifc4:IfcArcIndex a rdfs:Class.
+ifc4:IfcAreaDensityMeasure a rdfs:Class.
+ifc4:IfcAreaMeasure a rdfs:Class.
+ifc4:IfcAsset a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcGroup.
+ifc4:IfcAsymmetricIShapeProfileDef a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcAudioVisualAppliance a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcAudioVisualApplianceType a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcAxis1Placement a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPlacement.
+ifc4:IfcAxis2Placement2D a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcPlacement.
+ifc4:IfcAxis2Placement3D a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcPlacement.
+ifc4:IfcBSplineCurve a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcBoundedCurve.
+ifc4:IfcBSplineCurveWithKnots a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcBSplineCurve.
+ifc4:IfcBSplineSurface a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcBoundedSurface.
+ifc4:IfcBSplineSurfaceWithKnots a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcBSplineSurface.
+ifc4:IfcBeam a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcBeamStandardCase a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcBeam.
+ifc4:IfcBeamType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcBinary a rdfs:Class.
+ifc4:IfcBlobTexture a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcSurfaceTexture.
+ifc4:IfcBlock a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcCsgPrimitive3D.
+ifc4:IfcBoiler a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcBoilerType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcBoolean a rdfs:Class.
+ifc4:IfcBooleanClippingResult a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcBooleanResult.
+ifc4:IfcBooleanResult a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcBoundaryCondition a rdfs:Class.
+ifc4:IfcBoundaryCurve a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcCompositeCurveOnSurface.
+ifc4:IfcBoundaryEdgeCondition a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcBoundaryCondition.
+ifc4:IfcBoundaryFaceCondition a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcBoundaryCondition.
+ifc4:IfcBoundaryNodeCondition a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcBoundaryCondition.
+ifc4:IfcBoundaryNodeConditionWarping a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcBoundaryNodeCondition.
+ifc4:IfcBoundedCurve a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcCurve.
+ifc4:IfcBoundedSurface a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcSurface.
+ifc4:IfcBoundingBox a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcBoxAlignment a rdfs:Class.
+ifc4:IfcBoxedHalfSpace a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcHalfSpaceSolid.
+ifc4:IfcBuilding a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcSpatialStructureElement.
+ifc4:IfcBuildingElement a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcBuildingElementPart a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcElementComponent.
+ifc4:IfcBuildingElementPartType a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcElementComponentType.
+ifc4:IfcBuildingElementProxy a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcBuildingElementProxyType a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcBuildingElementType a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcElementType.
+ifc4:IfcBuildingStorey a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcSpatialStructureElement.
+ifc4:IfcBuildingSystem a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcSystem.
+ifc4:IfcBurner a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcBurnerType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcCShapeProfileDef a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcCableCarrierFitting a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcFlowFitting.
+ifc4:IfcCableCarrierFittingType a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcFlowFittingType.
+ifc4:IfcCableCarrierSegment a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcFlowSegment.
+ifc4:IfcCableCarrierSegmentType a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcFlowSegmentType.
+ifc4:IfcCableFitting a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcFlowFitting.
+ifc4:IfcCableFittingType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcFlowFittingType.
+ifc4:IfcCableSegment a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcFlowSegment.
+ifc4:IfcCableSegmentType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcFlowSegmentType.
+ifc4:IfcCardinalPointReference a rdfs:Class.
+ifc4:IfcCartesianPoint a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPoint.
+ifc4:IfcCartesianPointList a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcCartesianPointList2D a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcCartesianPointList.
+ifc4:IfcCartesianPointList3D a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcCartesianPointList.
+ifc4:IfcCartesianTransformationOperator a rdfs:Class;
+                                        rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcCartesianTransformationOperator2D a rdfs:Class;
+                                          rdfs:subClassOf ifc4:IfcCartesianTransformationOperator.
+ifc4:IfcCartesianTransformationOperator2DnonUniform a rdfs:Class;
+                                                    rdfs:subClassOf ifc4:IfcCartesianTransformationOperator2D.
+ifc4:IfcCartesianTransformationOperator3D a rdfs:Class;
+                                          rdfs:subClassOf ifc4:IfcCartesianTransformationOperator.
+ifc4:IfcCartesianTransformationOperator3DnonUniform a rdfs:Class;
+                                                    rdfs:subClassOf ifc4:IfcCartesianTransformationOperator3D.
+ifc4:IfcCenterLineProfileDef a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcArbitraryOpenProfileDef.
+ifc4:IfcChiller a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcChillerType a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcChimney a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcChimneyType a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcCircle a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcConic.
+ifc4:IfcCircleHollowProfileDef a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcCircleProfileDef.
+ifc4:IfcCircleProfileDef a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcCircularArcSegment2D a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcCurveSegment2D.
+ifc4:IfcCivilElement a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcCivilElementType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcElementType.
+ifc4:IfcClassification a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcExternalInformation.
+ifc4:IfcClassificationReference a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcExternalReference.
+ifc4:IfcClosedShell a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcConnectedFaceSet.
+ifc4:IfcCoil a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcCoilType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcColourRgb a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcColourSpecification.
+ifc4:IfcColourRgbList a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcColourSpecification a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcColumn a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcColumnStandardCase a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcColumn.
+ifc4:IfcColumnType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcCommunicationsAppliance a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcCommunicationsApplianceType a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcComplexNumber a rdfs:Class.
+ifc4:IfcComplexProperty a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcProperty.
+ifc4:IfcComplexPropertyTemplate a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcPropertyTemplate.
+ifc4:IfcCompositeCurve a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcBoundedCurve.
+ifc4:IfcCompositeCurveOnSurface a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcCompositeCurve.
+ifc4:IfcCompositeCurveSegment a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcCompositeProfileDef a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcProfileDef.
+ifc4:IfcCompoundPlaneAngleMeasure a rdfs:Class.
+ifc4:IfcCompressor a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcFlowMovingDevice.
+ifc4:IfcCompressorType a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcFlowMovingDeviceType.
+ifc4:IfcCondenser a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcCondenserType a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcConic a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcCurve.
+ifc4:IfcConnectedFaceSet a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcTopologicalRepresentationItem.
+ifc4:IfcConnectionCurveGeometry a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcConnectionGeometry.
+ifc4:IfcConnectionGeometry a rdfs:Class.
+ifc4:IfcConnectionPointEccentricity a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcConnectionPointGeometry.
+ifc4:IfcConnectionPointGeometry a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcConnectionGeometry.
+ifc4:IfcConnectionSurfaceGeometry a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcConnectionGeometry.
+ifc4:IfcConnectionVolumeGeometry a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcConnectionGeometry.
+ifc4:IfcConstraint a rdfs:Class.
+ifc4:IfcConstructionEquipmentResource a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcConstructionResource.
+ifc4:IfcConstructionEquipmentResourceType a rdfs:Class;
+                                          rdfs:subClassOf ifc4:IfcConstructionResourceType.
+ifc4:IfcConstructionMaterialResource a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcConstructionResource.
+ifc4:IfcConstructionMaterialResourceType a rdfs:Class;
+                                         rdfs:subClassOf ifc4:IfcConstructionResourceType.
+ifc4:IfcConstructionProductResource a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcConstructionResource.
+ifc4:IfcConstructionProductResourceType a rdfs:Class;
+                                        rdfs:subClassOf ifc4:IfcConstructionResourceType.
+ifc4:IfcConstructionResource a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcResource.
+ifc4:IfcConstructionResourceType a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcTypeResource.
+ifc4:IfcContext a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcObjectDefinition.
+ifc4:IfcContextDependentMeasure a rdfs:Class.
+ifc4:IfcContextDependentUnit a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcNamedUnit.
+ifc4:IfcControl a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcObject.
+ifc4:IfcController a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcDistributionControlElement.
+ifc4:IfcControllerType a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcDistributionControlElementType.
+ifc4:IfcConversionBasedUnit a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcNamedUnit.
+ifc4:IfcConversionBasedUnitWithOffset a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcConversionBasedUnit.
+ifc4:IfcCooledBeam a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcCooledBeamType a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcCoolingTower a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcCoolingTowerType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcCoordinateOperation a rdfs:Class.
+ifc4:IfcCoordinateReferenceSystem a rdfs:Class.
+ifc4:IfcCostItem a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcControl.
+ifc4:IfcCostSchedule a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcControl.
+ifc4:IfcCostValue a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcAppliedValue.
+ifc4:IfcCountMeasure a rdfs:Class.
+ifc4:IfcCovering a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcCoveringType a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcCrewResource a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcConstructionResource.
+ifc4:IfcCrewResourceType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcConstructionResourceType.
+ifc4:IfcCsgPrimitive3D a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcCsgSolid a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcSolidModel.
+ifc4:IfcCurrencyRelationship a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcCurtainWall a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcCurtainWallType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcCurvatureMeasure a rdfs:Class.
+ifc4:IfcCurve a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcCurveBoundedPlane a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcBoundedSurface.
+ifc4:IfcCurveBoundedSurface a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcBoundedSurface.
+ifc4:IfcCurveSegment2D a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcBoundedCurve.
+ifc4:IfcCurveStyle a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcPresentationStyle.
+ifc4:IfcCurveStyleFont a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcCurveStyleFontAndScaling a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcCurveStyleFontPattern a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcCylindricalSurface a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcElementarySurface.
+ifc4:IfcDamper a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcFlowController.
+ifc4:IfcDamperType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcFlowControllerType.
+ifc4:IfcDate a rdfs:Class.
+ifc4:IfcDateTime a rdfs:Class.
+ifc4:IfcDayInMonthNumber a rdfs:Class.
+ifc4:IfcDayInWeekNumber a rdfs:Class.
+ifc4:IfcDerivedProfileDef a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcProfileDef.
+ifc4:IfcDerivedUnit a rdfs:Class.
+ifc4:IfcDerivedUnitElement a rdfs:Class.
+ifc4:IfcDescriptiveMeasure a rdfs:Class.
+ifc4:IfcDimensionCount a rdfs:Class.
+ifc4:IfcDimensionalExponents a rdfs:Class.
+ifc4:IfcDirection a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcDiscreteAccessory a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcElementComponent.
+ifc4:IfcDiscreteAccessoryType a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcElementComponentType.
+ifc4:IfcDistanceExpression a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcDistributionChamberElement a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcDistributionChamberElementType a rdfs:Class;
+                                       rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcDistributionCircuit a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcDistributionSystem.
+ifc4:IfcDistributionControlElement a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcDistributionElement.
+ifc4:IfcDistributionControlElementType a rdfs:Class;
+                                       rdfs:subClassOf ifc4:IfcDistributionElementType.
+ifc4:IfcDistributionElement a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcDistributionElementType a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcElementType.
+ifc4:IfcDistributionFlowElement a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcDistributionElement.
+ifc4:IfcDistributionFlowElementType a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcDistributionElementType.
+ifc4:IfcDistributionPort a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcPort.
+ifc4:IfcDistributionSystem a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcSystem.
+ifc4:IfcDocumentInformation a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcExternalInformation.
+ifc4:IfcDocumentInformationRelationship a rdfs:Class;
+                                        rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcDocumentReference a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcExternalReference.
+ifc4:IfcDoor a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcDoorLiningProperties a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcPreDefinedPropertySet.
+ifc4:IfcDoorPanelProperties a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcPreDefinedPropertySet.
+ifc4:IfcDoorStandardCase a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcDoor.
+ifc4:IfcDoorStyle a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcTypeProduct.
+ifc4:IfcDoorType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcDoseEquivalentMeasure a rdfs:Class.
+ifc4:IfcDraughtingPreDefinedColour a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcPreDefinedColour.
+ifc4:IfcDraughtingPreDefinedCurveFont a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcPreDefinedCurveFont.
+ifc4:IfcDuctFitting a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFlowFitting.
+ifc4:IfcDuctFittingType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowFittingType.
+ifc4:IfcDuctSegment a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFlowSegment.
+ifc4:IfcDuctSegmentType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowSegmentType.
+ifc4:IfcDuctSilencer a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcFlowTreatmentDevice.
+ifc4:IfcDuctSilencerType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcFlowTreatmentDeviceType.
+ifc4:IfcDuration a rdfs:Class.
+ifc4:IfcDynamicViscosityMeasure a rdfs:Class.
+ifc4:IfcEdge a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcTopologicalRepresentationItem.
+ifc4:IfcEdgeCurve a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcEdge.
+ifc4:IfcEdgeLoop a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcLoop.
+ifc4:IfcElectricAppliance a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcElectricApplianceType a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcElectricCapacitanceMeasure a rdfs:Class.
+ifc4:IfcElectricChargeMeasure a rdfs:Class.
+ifc4:IfcElectricConductanceMeasure a rdfs:Class.
+ifc4:IfcElectricCurrentMeasure a rdfs:Class.
+ifc4:IfcElectricDistributionBoard a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcFlowController.
+ifc4:IfcElectricDistributionBoardType a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcFlowControllerType.
+ifc4:IfcElectricFlowStorageDevice a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcFlowStorageDevice.
+ifc4:IfcElectricFlowStorageDeviceType a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcFlowStorageDeviceType.
+ifc4:IfcElectricGenerator a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcElectricGeneratorType a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcElectricMotor a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcElectricMotorType a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcElectricResistanceMeasure a rdfs:Class.
+ifc4:IfcElectricTimeControl a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcFlowController.
+ifc4:IfcElectricTimeControlType a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcFlowControllerType.
+ifc4:IfcElectricVoltageMeasure a rdfs:Class.
+ifc4:IfcElement a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcElementAssembly a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcElementAssemblyType a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcElementType.
+ifc4:IfcElementComponent a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcElementComponentType a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcElementType.
+ifc4:IfcElementQuantity a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcQuantitySet.
+ifc4:IfcElementType a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcTypeProduct.
+ifc4:IfcElementarySurface a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcSurface.
+ifc4:IfcEllipse a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcConic.
+ifc4:IfcEllipseProfileDef a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcEnergyConversionDevice a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcEnergyConversionDeviceType a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcEnergyMeasure a rdfs:Class.
+ifc4:IfcEngine a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcEngineType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcEvaporativeCooler a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcEvaporativeCoolerType a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcEvaporator a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcEvaporatorType a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcEvent a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcProcess.
+ifc4:IfcEventTime a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcSchedulingTime.
+ifc4:IfcEventType a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcTypeProcess.
+ifc4:IfcExtendedProperties a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcPropertyAbstraction.
+ifc4:IfcExternalInformation a rdfs:Class.
+ifc4:IfcExternalReference a rdfs:Class.
+ifc4:IfcExternalReferenceRelationship a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcExternalSpatialElement a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcExternalSpatialStructureElement.
+ifc4:IfcExternalSpatialStructureElement a rdfs:Class;
+                                        rdfs:subClassOf ifc4:IfcSpatialElement.
+ifc4:IfcExternallyDefinedHatchStyle a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcExternalReference.
+ifc4:IfcExternallyDefinedSurfaceStyle a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcExternalReference.
+ifc4:IfcExternallyDefinedTextFont a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcExternalReference.
+ifc4:IfcExtrudedAreaSolid a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcSweptAreaSolid.
+ifc4:IfcExtrudedAreaSolidTapered a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcExtrudedAreaSolid.
+ifc4:IfcFace a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcTopologicalRepresentationItem.
+ifc4:IfcFaceBasedSurfaceModel a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcFaceBound a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcTopologicalRepresentationItem.
+ifc4:IfcFaceOuterBound a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcFaceBound.
+ifc4:IfcFaceSurface a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFace.
+ifc4:IfcFacetedBrep a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcManifoldSolidBrep.
+ifc4:IfcFacetedBrepWithVoids a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcFacetedBrep.
+ifc4:IfcFailureConnectionCondition a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcStructuralConnectionCondition.
+ifc4:IfcFan a rdfs:Class;
+            rdfs:subClassOf ifc4:IfcFlowMovingDevice.
+ifc4:IfcFanType a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcFlowMovingDeviceType.
+ifc4:IfcFastener a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcElementComponent.
+ifc4:IfcFastenerType a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcElementComponentType.
+ifc4:IfcFeatureElement a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcFeatureElementAddition a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcFeatureElement.
+ifc4:IfcFeatureElementSubtraction a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcFeatureElement.
+ifc4:IfcFillAreaStyle a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcPresentationStyle.
+ifc4:IfcFillAreaStyleHatching a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcFillAreaStyleTiles a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcFilter a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcFlowTreatmentDevice.
+ifc4:IfcFilterType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcFlowTreatmentDeviceType.
+ifc4:IfcFireSuppressionTerminal a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcFireSuppressionTerminalType a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcFixedReferenceSweptAreaSolid a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcSweptAreaSolid.
+ifc4:IfcFlowController a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcFlowControllerType a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcFlowFitting a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcFlowFittingType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcFlowInstrument a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcDistributionControlElement.
+ifc4:IfcFlowInstrumentType a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcDistributionControlElementType.
+ifc4:IfcFlowMeter a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcFlowController.
+ifc4:IfcFlowMeterType a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcFlowControllerType.
+ifc4:IfcFlowMovingDevice a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcFlowMovingDeviceType a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcFlowSegment a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcFlowSegmentType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcFlowStorageDevice a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcFlowStorageDeviceType a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcFlowTerminal a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcFlowTerminalType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcFlowTreatmentDevice a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcDistributionFlowElement.
+ifc4:IfcFlowTreatmentDeviceType a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcDistributionFlowElementType.
+ifc4:IfcFontStyle a rdfs:Class.
+ifc4:IfcFontVariant a rdfs:Class.
+ifc4:IfcFontWeight a rdfs:Class.
+ifc4:IfcFooting a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcFootingType a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcForceMeasure a rdfs:Class.
+ifc4:IfcFrequencyMeasure a rdfs:Class.
+ifc4:IfcFurnishingElement a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcFurnishingElementType a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcElementType.
+ifc4:IfcFurniture a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcFurnishingElement.
+ifc4:IfcFurnitureType a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcFurnishingElementType.
+ifc4:IfcGeographicElement a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcGeographicElementType a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcElementType.
+ifc4:IfcGeometricCurveSet a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcGeometricSet.
+ifc4:IfcGeometricRepresentationContext a rdfs:Class;
+                                       rdfs:subClassOf ifc4:IfcRepresentationContext.
+ifc4:IfcGeometricRepresentationItem a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcRepresentationItem.
+ifc4:IfcGeometricRepresentationSubContext a rdfs:Class;
+                                          rdfs:subClassOf ifc4:IfcGeometricRepresentationContext.
+ifc4:IfcGeometricSet a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcGloballyUniqueId a rdfs:Class.
+ifc4:IfcGrid a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcGridAxis a rdfs:Class.
+ifc4:IfcGridPlacement a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcObjectPlacement.
+ifc4:IfcGroup a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcObject.
+ifc4:IfcHalfSpaceSolid a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcHeatExchanger a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcHeatExchangerType a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcHeatFluxDensityMeasure a rdfs:Class.
+ifc4:IfcHeatingValueMeasure a rdfs:Class.
+ifc4:IfcHumidifier a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcHumidifierType a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcIShapeProfileDef a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcIdentifier a rdfs:Class.
+ifc4:IfcIlluminanceMeasure a rdfs:Class.
+ifc4:IfcImageTexture a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcSurfaceTexture.
+ifc4:IfcIndexedColourMap a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcIndexedPolyCurve a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcBoundedCurve.
+ifc4:IfcIndexedPolygonalFace a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcTessellatedItem.
+ifc4:IfcIndexedPolygonalFaceWithVoids a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcIndexedPolygonalFace.
+ifc4:IfcIndexedTextureMap a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcTextureCoordinate.
+ifc4:IfcIndexedTriangleTextureMap a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcIndexedTextureMap.
+ifc4:IfcInductanceMeasure a rdfs:Class.
+ifc4:IfcInteger a rdfs:Class.
+ifc4:IfcIntegerCountRateMeasure a rdfs:Class.
+ifc4:IfcInterceptor a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFlowTreatmentDevice.
+ifc4:IfcInterceptorType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowTreatmentDeviceType.
+ifc4:IfcIntersectionCurve a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcSurfaceCurve.
+ifc4:IfcInventory a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcGroup.
+ifc4:IfcIonConcentrationMeasure a rdfs:Class.
+ifc4:IfcIrregularTimeSeries a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcTimeSeries.
+ifc4:IfcIrregularTimeSeriesValue a rdfs:Class.
+ifc4:IfcIsothermalMoistureCapacityMeasure a rdfs:Class.
+ifc4:IfcJunctionBox a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFlowFitting.
+ifc4:IfcJunctionBoxType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowFittingType.
+ifc4:IfcKinematicViscosityMeasure a rdfs:Class.
+ifc4:IfcLShapeProfileDef a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcLabel a rdfs:Class.
+ifc4:IfcLaborResource a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcConstructionResource.
+ifc4:IfcLaborResourceType a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcConstructionResourceType.
+ifc4:IfcLagTime a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcSchedulingTime.
+ifc4:IfcLamp a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcLampType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcLanguageId a rdfs:Class.
+ifc4:IfcLengthMeasure a rdfs:Class.
+ifc4:IfcLibraryInformation a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcExternalInformation.
+ifc4:IfcLibraryReference a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcExternalReference.
+ifc4:IfcLightDistributionData a rdfs:Class.
+ifc4:IfcLightFixture a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcLightFixtureType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcLightIntensityDistribution a rdfs:Class.
+ifc4:IfcLightSource a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcLightSourceAmbient a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcLightSource.
+ifc4:IfcLightSourceDirectional a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcLightSource.
+ifc4:IfcLightSourceGoniometric a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcLightSource.
+ifc4:IfcLightSourcePositional a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcLightSource.
+ifc4:IfcLightSourceSpot a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcLightSourcePositional.
+ifc4:IfcLine a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcCurve.
+ifc4:IfcLineIndex a rdfs:Class.
+ifc4:IfcLineSegment2D a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcCurveSegment2D.
+ifc4:IfcLinearForceMeasure a rdfs:Class.
+ifc4:IfcLinearMomentMeasure a rdfs:Class.
+ifc4:IfcLinearPlacement a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcObjectPlacement.
+ifc4:IfcLinearPositioningElement a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcPositioningElement.
+ifc4:IfcLinearStiffnessMeasure a rdfs:Class.
+ifc4:IfcLinearVelocityMeasure a rdfs:Class.
+ifc4:IfcLocalPlacement a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcObjectPlacement.
+ifc4:IfcLogical a rdfs:Class.
+ifc4:IfcLoop a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcTopologicalRepresentationItem.
+ifc4:IfcLuminousFluxMeasure a rdfs:Class.
+ifc4:IfcLuminousIntensityDistributionMeasure a rdfs:Class.
+ifc4:IfcLuminousIntensityMeasure a rdfs:Class.
+ifc4:IfcMagneticFluxDensityMeasure a rdfs:Class.
+ifc4:IfcMagneticFluxMeasure a rdfs:Class.
+ifc4:IfcManifoldSolidBrep a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcSolidModel.
+ifc4:IfcMapConversion a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcCoordinateOperation.
+ifc4:IfcMappedItem a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcRepresentationItem.
+ifc4:IfcMassDensityMeasure a rdfs:Class.
+ifc4:IfcMassFlowRateMeasure a rdfs:Class.
+ifc4:IfcMassMeasure a rdfs:Class.
+ifc4:IfcMassPerLengthMeasure a rdfs:Class.
+ifc4:IfcMaterial a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcMaterialDefinition.
+ifc4:IfcMaterialClassificationRelationship a rdfs:Class.
+ifc4:IfcMaterialConstituent a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcMaterialDefinition.
+ifc4:IfcMaterialConstituentSet a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcMaterialDefinition.
+ifc4:IfcMaterialDefinition a rdfs:Class.
+ifc4:IfcMaterialDefinitionRepresentation a rdfs:Class;
+                                         rdfs:subClassOf ifc4:IfcProductRepresentation.
+ifc4:IfcMaterialLayer a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcMaterialDefinition.
+ifc4:IfcMaterialLayerSet a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcMaterialDefinition.
+ifc4:IfcMaterialLayerSetUsage a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcMaterialUsageDefinition.
+ifc4:IfcMaterialLayerWithOffsets a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcMaterialLayer.
+ifc4:IfcMaterialList a rdfs:Class.
+ifc4:IfcMaterialProfile a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcMaterialDefinition.
+ifc4:IfcMaterialProfileSet a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcMaterialDefinition.
+ifc4:IfcMaterialProfileSetUsage a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcMaterialUsageDefinition.
+ifc4:IfcMaterialProfileSetUsageTapering a rdfs:Class;
+                                        rdfs:subClassOf ifc4:IfcMaterialProfileSetUsage.
+ifc4:IfcMaterialProfileWithOffsets a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcMaterialProfile.
+ifc4:IfcMaterialProperties a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcExtendedProperties.
+ifc4:IfcMaterialRelationship a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcMaterialUsageDefinition a rdfs:Class.
+ifc4:IfcMeasureWithUnit a rdfs:Class.
+ifc4:IfcMechanicalFastener a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcElementComponent.
+ifc4:IfcMechanicalFastenerType a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcElementComponentType.
+ifc4:IfcMedicalDevice a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcMedicalDeviceType a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcMember a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcMemberStandardCase a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcMember.
+ifc4:IfcMemberType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcMetric a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcConstraint.
+ifc4:IfcMirroredProfileDef a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcDerivedProfileDef.
+ifc4:IfcModulusOfElasticityMeasure a rdfs:Class.
+ifc4:IfcModulusOfLinearSubgradeReactionMeasure a rdfs:Class.
+ifc4:IfcModulusOfRotationalSubgradeReactionMeasure a rdfs:Class.
+ifc4:IfcModulusOfSubgradeReactionMeasure a rdfs:Class.
+ifc4:IfcMoistureDiffusivityMeasure a rdfs:Class.
+ifc4:IfcMolecularWeightMeasure a rdfs:Class.
+ifc4:IfcMomentOfInertiaMeasure a rdfs:Class.
+ifc4:IfcMonetaryMeasure a rdfs:Class.
+ifc4:IfcMonetaryUnit a rdfs:Class.
+ifc4:IfcMonthInYearNumber a rdfs:Class.
+ifc4:IfcMotorConnection a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcMotorConnectionType a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcNamedUnit a rdfs:Class.
+ifc4:IfcNonNegativeLengthMeasure a rdfs:Class.
+ifc4:IfcNormalisedRatioMeasure a rdfs:Class.
+ifc4:IfcNullStyle a rdfs:Class.
+ifc4:IfcNumericMeasure a rdfs:Class.
+ifc4:IfcObject a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcObjectDefinition.
+ifc4:IfcObjectDefinition a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcRoot.
+ifc4:IfcObjectPlacement a rdfs:Class.
+ifc4:IfcObjective a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcConstraint.
+ifc4:IfcOccupant a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcActor.
+ifc4:IfcOffsetCurve a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcCurve.
+ifc4:IfcOffsetCurve2D a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcOffsetCurve.
+ifc4:IfcOffsetCurve3D a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcOffsetCurve.
+ifc4:IfcOffsetCurveByDistances a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcOffsetCurve.
+ifc4:IfcOpenShell a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcConnectedFaceSet.
+ifc4:IfcOpeningElement a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcFeatureElementSubtraction.
+ifc4:IfcOpeningStandardCase a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcOpeningElement.
+ifc4:IfcOrganization a rdfs:Class.
+ifc4:IfcOrganizationRelationship a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcOrientationExpression a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcOrientedEdge a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcEdge.
+ifc4:IfcOuterBoundaryCurve a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcBoundaryCurve.
+ifc4:IfcOutlet a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcOutletType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcOwnerHistory a rdfs:Class.
+ifc4:IfcPHMeasure a rdfs:Class.
+ifc4:IfcParameterValue a rdfs:Class.
+ifc4:IfcParameterizedProfileDef a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcProfileDef.
+ifc4:IfcPath a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcTopologicalRepresentationItem.
+ifc4:IfcPcurve a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcCurve.
+ifc4:IfcPerformanceHistory a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcControl.
+ifc4:IfcPermeableCoveringProperties a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcPreDefinedPropertySet.
+ifc4:IfcPermit a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcControl.
+ifc4:IfcPerson a rdfs:Class.
+ifc4:IfcPersonAndOrganization a rdfs:Class.
+ifc4:IfcPhysicalComplexQuantity a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcPhysicalQuantity.
+ifc4:IfcPhysicalQuantity a rdfs:Class.
+ifc4:IfcPhysicalSimpleQuantity a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcPhysicalQuantity.
+ifc4:IfcPile a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcPileType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcPipeFitting a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFlowFitting.
+ifc4:IfcPipeFittingType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowFittingType.
+ifc4:IfcPipeSegment a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFlowSegment.
+ifc4:IfcPipeSegmentType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowSegmentType.
+ifc4:IfcPixelTexture a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcSurfaceTexture.
+ifc4:IfcPlacement a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcPlanarBox a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcPlanarExtent.
+ifc4:IfcPlanarExtent a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcPlanarForceMeasure a rdfs:Class.
+ifc4:IfcPlane a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcElementarySurface.
+ifc4:IfcPlaneAngleMeasure a rdfs:Class.
+ifc4:IfcPlate a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcPlateStandardCase a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcPlate.
+ifc4:IfcPlateType a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcPoint a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcPointOnCurve a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcPoint.
+ifc4:IfcPointOnSurface a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPoint.
+ifc4:IfcPolyLoop a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcLoop.
+ifc4:IfcPolygonalBoundedHalfSpace a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcHalfSpaceSolid.
+ifc4:IfcPolygonalFaceSet a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcTessellatedFaceSet.
+ifc4:IfcPolyline a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBoundedCurve.
+ifc4:IfcPort a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcPositioningElement a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcPositiveInteger a rdfs:Class.
+ifc4:IfcPositiveLengthMeasure a rdfs:Class.
+ifc4:IfcPositivePlaneAngleMeasure a rdfs:Class.
+ifc4:IfcPositiveRatioMeasure a rdfs:Class.
+ifc4:IfcPostalAddress a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcAddress.
+ifc4:IfcPowerMeasure a rdfs:Class.
+ifc4:IfcPreDefinedColour a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcPreDefinedItem.
+ifc4:IfcPreDefinedCurveFont a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcPreDefinedItem.
+ifc4:IfcPreDefinedItem a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcPreDefinedProperties a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcPropertyAbstraction.
+ifc4:IfcPreDefinedPropertySet a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcPropertySetDefinition.
+ifc4:IfcPreDefinedTextFont a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcPreDefinedItem.
+ifc4:IfcPresentableText a rdfs:Class.
+ifc4:IfcPresentationItem a rdfs:Class.
+ifc4:IfcPresentationLayerAssignment a rdfs:Class.
+ifc4:IfcPresentationLayerWithStyle a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcPresentationLayerAssignment.
+ifc4:IfcPresentationStyle a rdfs:Class.
+ifc4:IfcPresentationStyleAssignment a rdfs:Class.
+ifc4:IfcPressureMeasure a rdfs:Class.
+ifc4:IfcProcedure a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcProcess.
+ifc4:IfcProcedureType a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcTypeProcess.
+ifc4:IfcProcess a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcObject.
+ifc4:IfcProduct a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcObject.
+ifc4:IfcProductDefinitionShape a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcProductRepresentation.
+ifc4:IfcProductRepresentation a rdfs:Class.
+ifc4:IfcProfileDef a rdfs:Class.
+ifc4:IfcProfileProperties a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcExtendedProperties.
+ifc4:IfcProject a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcContext.
+ifc4:IfcProjectLibrary a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcContext.
+ifc4:IfcProjectOrder a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcControl.
+ifc4:IfcProjectedCRS a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcCoordinateReferenceSystem.
+ifc4:IfcProjectionElement a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcFeatureElementAddition.
+ifc4:IfcProperty a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcPropertyAbstraction.
+ifc4:IfcPropertyAbstraction a rdfs:Class.
+ifc4:IfcPropertyBoundedValue a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcSimpleProperty.
+ifc4:IfcPropertyDefinition a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcRoot.
+ifc4:IfcPropertyDependencyRelationship a rdfs:Class;
+                                       rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcPropertyEnumeratedValue a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcSimpleProperty.
+ifc4:IfcPropertyEnumeration a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcPropertyAbstraction.
+ifc4:IfcPropertyListValue a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcSimpleProperty.
+ifc4:IfcPropertyReferenceValue a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcSimpleProperty.
+ifc4:IfcPropertySet a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcPropertySetDefinition.
+ifc4:IfcPropertySetDefinition a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcPropertyDefinition.
+ifc4:IfcPropertySetDefinitionSet a rdfs:Class.
+ifc4:IfcPropertySetTemplate a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcPropertyTemplateDefinition.
+ifc4:IfcPropertySingleValue a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcSimpleProperty.
+ifc4:IfcPropertyTableValue a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcSimpleProperty.
+ifc4:IfcPropertyTemplate a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcPropertyTemplateDefinition.
+ifc4:IfcPropertyTemplateDefinition a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcPropertyDefinition.
+ifc4:IfcProtectiveDevice a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcFlowController.
+ifc4:IfcProtectiveDeviceTrippingUnit a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcDistributionControlElement.
+ifc4:IfcProtectiveDeviceTrippingUnitType a rdfs:Class;
+                                         rdfs:subClassOf ifc4:IfcDistributionControlElementType.
+ifc4:IfcProtectiveDeviceType a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcFlowControllerType.
+ifc4:IfcProxy a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcPump a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcFlowMovingDevice.
+ifc4:IfcPumpType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcFlowMovingDeviceType.
+ifc4:IfcQuantityArea a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcPhysicalSimpleQuantity.
+ifc4:IfcQuantityCount a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcPhysicalSimpleQuantity.
+ifc4:IfcQuantityLength a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPhysicalSimpleQuantity.
+ifc4:IfcQuantitySet a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcPropertySetDefinition.
+ifc4:IfcQuantityTime a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcPhysicalSimpleQuantity.
+ifc4:IfcQuantityVolume a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPhysicalSimpleQuantity.
+ifc4:IfcQuantityWeight a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPhysicalSimpleQuantity.
+ifc4:IfcRadioActivityMeasure a rdfs:Class.
+ifc4:IfcRailing a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcRailingType a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcRamp a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcRampFlight a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcRampFlightType a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcRampType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcRatioMeasure a rdfs:Class.
+ifc4:IfcRationalBSplineCurveWithKnots a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcBSplineCurveWithKnots.
+ifc4:IfcRationalBSplineSurfaceWithKnots a rdfs:Class;
+                                        rdfs:subClassOf ifc4:IfcBSplineSurfaceWithKnots.
+ifc4:IfcReal a rdfs:Class.
+ifc4:IfcRectangleHollowProfileDef a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcRectangleProfileDef.
+ifc4:IfcRectangleProfileDef a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcRectangularPyramid a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcCsgPrimitive3D.
+ifc4:IfcRectangularTrimmedSurface a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcBoundedSurface.
+ifc4:IfcRecurrencePattern a rdfs:Class.
+ifc4:IfcReference a rdfs:Class.
+ifc4:IfcReferent a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcPositioningElement.
+ifc4:IfcRegularTimeSeries a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcTimeSeries.
+ifc4:IfcReinforcementBarProperties a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcPreDefinedProperties.
+ifc4:IfcReinforcementDefinitionProperties a rdfs:Class;
+                                          rdfs:subClassOf ifc4:IfcPreDefinedPropertySet.
+ifc4:IfcReinforcingBar a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcReinforcingElement.
+ifc4:IfcReinforcingBarType a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcReinforcingElementType.
+ifc4:IfcReinforcingElement a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcElementComponent.
+ifc4:IfcReinforcingElementType a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcElementComponentType.
+ifc4:IfcReinforcingMesh a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcReinforcingElement.
+ifc4:IfcReinforcingMeshType a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcReinforcingElementType.
+ifc4:IfcRelAggregates a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcRelDecomposes.
+ifc4:IfcRelAssigns a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcRelationship.
+ifc4:IfcRelAssignsToActor a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcRelAssigns.
+ifc4:IfcRelAssignsToControl a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcRelAssigns.
+ifc4:IfcRelAssignsToGroup a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcRelAssigns.
+ifc4:IfcRelAssignsToGroupByFactor a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcRelAssignsToGroup.
+ifc4:IfcRelAssignsToProcess a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcRelAssigns.
+ifc4:IfcRelAssignsToProduct a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcRelAssigns.
+ifc4:IfcRelAssignsToResource a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcRelAssigns.
+ifc4:IfcRelAssociates a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcRelationship.
+ifc4:IfcRelAssociatesApproval a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcRelAssociates.
+ifc4:IfcRelAssociatesClassification a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcRelAssociates.
+ifc4:IfcRelAssociatesConstraint a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcRelAssociates.
+ifc4:IfcRelAssociatesDocument a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcRelAssociates.
+ifc4:IfcRelAssociatesLibrary a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcRelAssociates.
+ifc4:IfcRelAssociatesMaterial a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcRelAssociates.
+ifc4:IfcRelConnects a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcRelationship.
+ifc4:IfcRelConnectsElements a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelConnectsPathElements a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcRelConnectsElements.
+ifc4:IfcRelConnectsPortToElement a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelConnectsPorts a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelConnectsStructuralActivity a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelConnectsStructuralMember a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelConnectsWithEccentricity a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcRelConnectsStructuralMember.
+ifc4:IfcRelConnectsWithRealizingElements a rdfs:Class;
+                                         rdfs:subClassOf ifc4:IfcRelConnectsElements.
+ifc4:IfcRelContainedInSpatialStructure a rdfs:Class;
+                                       rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelCoversBldgElements a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelCoversSpaces a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelDeclares a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcRelationship.
+ifc4:IfcRelDecomposes a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcRelationship.
+ifc4:IfcRelDefines a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcRelationship.
+ifc4:IfcRelDefinesByObject a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcRelDefines.
+ifc4:IfcRelDefinesByProperties a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcRelDefines.
+ifc4:IfcRelDefinesByTemplate a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcRelDefines.
+ifc4:IfcRelDefinesByType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcRelDefines.
+ifc4:IfcRelFillsElement a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelFlowControlElements a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelInterferesElements a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelNests a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcRelDecomposes.
+ifc4:IfcRelProjectsElement a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcRelDecomposes.
+ifc4:IfcRelReferencedInSpatialStructure a rdfs:Class;
+                                        rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelSequence a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelServicesBuildings a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelSpaceBoundary a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcRelConnects.
+ifc4:IfcRelSpaceBoundary1stLevel a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcRelSpaceBoundary.
+ifc4:IfcRelSpaceBoundary2ndLevel a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcRelSpaceBoundary1stLevel.
+ifc4:IfcRelVoidsElement a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcRelDecomposes.
+ifc4:IfcRelationship a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcRoot.
+ifc4:IfcReparametrisedCompositeCurveSegment a rdfs:Class;
+                                            rdfs:subClassOf ifc4:IfcCompositeCurveSegment.
+ifc4:IfcRepresentation a rdfs:Class.
+ifc4:IfcRepresentationContext a rdfs:Class.
+ifc4:IfcRepresentationItem a rdfs:Class.
+ifc4:IfcRepresentationMap a rdfs:Class.
+ifc4:IfcResource a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcObject.
+ifc4:IfcResourceApprovalRelationship a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcResourceConstraintRelationship a rdfs:Class;
+                                       rdfs:subClassOf ifc4:IfcResourceLevelRelationship.
+ifc4:IfcResourceLevelRelationship a rdfs:Class.
+ifc4:IfcResourceTime a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcSchedulingTime.
+ifc4:IfcRevolvedAreaSolid a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcSweptAreaSolid.
+ifc4:IfcRevolvedAreaSolidTapered a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcRevolvedAreaSolid.
+ifc4:IfcRightCircularCone a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcCsgPrimitive3D.
+ifc4:IfcRightCircularCylinder a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcCsgPrimitive3D.
+ifc4:IfcRoof a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcRoofType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcRoot a rdfs:Class.
+ifc4:IfcRotationalFrequencyMeasure a rdfs:Class.
+ifc4:IfcRotationalMassMeasure a rdfs:Class.
+ifc4:IfcRotationalStiffnessMeasure a rdfs:Class.
+ifc4:IfcRoundedRectangleProfileDef a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcRectangleProfileDef.
+ifc4:IfcSIUnit a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcNamedUnit.
+ifc4:IfcSanitaryTerminal a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcSanitaryTerminalType a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcSchedulingTime a rdfs:Class.
+ifc4:IfcSeamCurve a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcSurfaceCurve.
+ifc4:IfcSectionModulusMeasure a rdfs:Class.
+ifc4:IfcSectionProperties a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcPreDefinedProperties.
+ifc4:IfcSectionReinforcementProperties a rdfs:Class;
+                                       rdfs:subClassOf ifc4:IfcPreDefinedProperties.
+ifc4:IfcSectionalAreaIntegralMeasure a rdfs:Class.
+ifc4:IfcSectionedSolid a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcSolidModel.
+ifc4:IfcSectionedSolidHorizontal a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcSectionedSolid.
+ifc4:IfcSectionedSpine a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcSensor a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcDistributionControlElement.
+ifc4:IfcSensorType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcDistributionControlElementType.
+ifc4:IfcShadingDevice a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcShadingDeviceType a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcShapeAspect a rdfs:Class.
+ifc4:IfcShapeModel a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcRepresentation.
+ifc4:IfcShapeRepresentation a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcShapeModel.
+ifc4:IfcShearModulusMeasure a rdfs:Class.
+ifc4:IfcShellBasedSurfaceModel a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcSimpleProperty a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcProperty.
+ifc4:IfcSimplePropertyTemplate a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcPropertyTemplate.
+ifc4:IfcSite a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcSpatialStructureElement.
+ifc4:IfcSlab a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcSlabElementedCase a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcSlab.
+ifc4:IfcSlabStandardCase a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcSlab.
+ifc4:IfcSlabType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcSlippageConnectionCondition a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcStructuralConnectionCondition.
+ifc4:IfcSolarDevice a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcSolarDeviceType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcSolidAngleMeasure a rdfs:Class.
+ifc4:IfcSolidModel a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcSoundPowerLevelMeasure a rdfs:Class.
+ifc4:IfcSoundPowerMeasure a rdfs:Class.
+ifc4:IfcSoundPressureLevelMeasure a rdfs:Class.
+ifc4:IfcSoundPressureMeasure a rdfs:Class.
+ifc4:IfcSpace a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcSpatialStructureElement.
+ifc4:IfcSpaceHeater a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcSpaceHeaterType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcSpaceType a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcSpatialStructureElementType.
+ifc4:IfcSpatialElement a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcSpatialElementType a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcTypeProduct.
+ifc4:IfcSpatialStructureElement a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcSpatialElement.
+ifc4:IfcSpatialStructureElementType a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcSpatialElementType.
+ifc4:IfcSpatialZone a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcSpatialElement.
+ifc4:IfcSpatialZoneType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcSpatialElementType.
+ifc4:IfcSpecificHeatCapacityMeasure a rdfs:Class.
+ifc4:IfcSpecularExponent a rdfs:Class.
+ifc4:IfcSpecularRoughness a rdfs:Class.
+ifc4:IfcSphere a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcCsgPrimitive3D.
+ifc4:IfcSphericalSurface a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcElementarySurface.
+ifc4:IfcStackTerminal a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcStackTerminalType a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcStair a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcStairFlight a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcStairFlightType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcStairType a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcStrippedOptional a rdfs:Class.
+ifc4:IfcStructuralAction a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcStructuralActivity.
+ifc4:IfcStructuralActivity a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcStructuralAnalysisModel a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcSystem.
+ifc4:IfcStructuralConnection a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcStructuralItem.
+ifc4:IfcStructuralConnectionCondition a rdfs:Class.
+ifc4:IfcStructuralCurveAction a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcStructuralAction.
+ifc4:IfcStructuralCurveConnection a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcStructuralConnection.
+ifc4:IfcStructuralCurveMember a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcStructuralMember.
+ifc4:IfcStructuralCurveMemberVarying a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcStructuralCurveMember.
+ifc4:IfcStructuralCurveReaction a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcStructuralReaction.
+ifc4:IfcStructuralItem a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcProduct.
+ifc4:IfcStructuralLinearAction a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcStructuralCurveAction.
+ifc4:IfcStructuralLoad a rdfs:Class.
+ifc4:IfcStructuralLoadCase a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcStructuralLoadGroup.
+ifc4:IfcStructuralLoadConfiguration a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcStructuralLoad.
+ifc4:IfcStructuralLoadGroup a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcGroup.
+ifc4:IfcStructuralLoadLinearForce a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcStructuralLoadStatic.
+ifc4:IfcStructuralLoadOrResult a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcStructuralLoad.
+ifc4:IfcStructuralLoadPlanarForce a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcStructuralLoadStatic.
+ifc4:IfcStructuralLoadSingleDisplacement a rdfs:Class;
+                                         rdfs:subClassOf ifc4:IfcStructuralLoadStatic.
+ifc4:IfcStructuralLoadSingleDisplacementDistortion a rdfs:Class;
+                                                   rdfs:subClassOf ifc4:IfcStructuralLoadSingleDisplacement.
+ifc4:IfcStructuralLoadSingleForce a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcStructuralLoadStatic.
+ifc4:IfcStructuralLoadSingleForceWarping a rdfs:Class;
+                                         rdfs:subClassOf ifc4:IfcStructuralLoadSingleForce.
+ifc4:IfcStructuralLoadStatic a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcStructuralLoadOrResult.
+ifc4:IfcStructuralLoadTemperature a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcStructuralLoadStatic.
+ifc4:IfcStructuralMember a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcStructuralItem.
+ifc4:IfcStructuralPlanarAction a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcStructuralSurfaceAction.
+ifc4:IfcStructuralPointAction a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcStructuralAction.
+ifc4:IfcStructuralPointConnection a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcStructuralConnection.
+ifc4:IfcStructuralPointReaction a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcStructuralReaction.
+ifc4:IfcStructuralReaction a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcStructuralActivity.
+ifc4:IfcStructuralResultGroup a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcGroup.
+ifc4:IfcStructuralSurfaceAction a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcStructuralAction.
+ifc4:IfcStructuralSurfaceConnection a rdfs:Class;
+                                    rdfs:subClassOf ifc4:IfcStructuralConnection.
+ifc4:IfcStructuralSurfaceMember a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcStructuralMember.
+ifc4:IfcStructuralSurfaceMemberVarying a rdfs:Class;
+                                       rdfs:subClassOf ifc4:IfcStructuralSurfaceMember.
+ifc4:IfcStructuralSurfaceReaction a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcStructuralReaction.
+ifc4:IfcStyleModel a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcRepresentation.
+ifc4:IfcStyledItem a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcRepresentationItem.
+ifc4:IfcStyledRepresentation a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcStyleModel.
+ifc4:IfcSubContractResource a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcConstructionResource.
+ifc4:IfcSubContractResourceType a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcConstructionResourceType.
+ifc4:IfcSubedge a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcEdge.
+ifc4:IfcSurface a rdfs:Class;
+                rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcSurfaceCurve a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcCurve.
+ifc4:IfcSurfaceCurveSweptAreaSolid a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcSweptAreaSolid.
+ifc4:IfcSurfaceFeature a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcFeatureElement.
+ifc4:IfcSurfaceOfLinearExtrusion a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcSweptSurface.
+ifc4:IfcSurfaceOfRevolution a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcSweptSurface.
+ifc4:IfcSurfaceReinforcementArea a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcStructuralLoadOrResult.
+ifc4:IfcSurfaceStyle a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcPresentationStyle.
+ifc4:IfcSurfaceStyleLighting a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcSurfaceStyleRefraction a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcSurfaceStyleRendering a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcSurfaceStyleShading.
+ifc4:IfcSurfaceStyleShading a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcSurfaceStyleWithTextures a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcSurfaceTexture a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcSweptAreaSolid a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcSolidModel.
+ifc4:IfcSweptDiskSolid a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcSolidModel.
+ifc4:IfcSweptDiskSolidPolygonal a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcSweptDiskSolid.
+ifc4:IfcSweptSurface a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcSurface.
+ifc4:IfcSwitchingDevice a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcFlowController.
+ifc4:IfcSwitchingDeviceType a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcFlowControllerType.
+ifc4:IfcSystem a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcGroup.
+ifc4:IfcSystemFurnitureElement a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcFurnishingElement.
+ifc4:IfcSystemFurnitureElementType a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcFurnishingElementType.
+ifc4:IfcTShapeProfileDef a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcTable a rdfs:Class.
+ifc4:IfcTableColumn a rdfs:Class.
+ifc4:IfcTableRow a rdfs:Class.
+ifc4:IfcTank a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcFlowStorageDevice.
+ifc4:IfcTankType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcFlowStorageDeviceType.
+ifc4:IfcTask a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcProcess.
+ifc4:IfcTaskTime a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcSchedulingTime.
+ifc4:IfcTaskTimeRecurring a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcTaskTime.
+ifc4:IfcTaskType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcTypeProcess.
+ifc4:IfcTelecomAddress a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcAddress.
+ifc4:IfcTemperatureGradientMeasure a rdfs:Class.
+ifc4:IfcTemperatureRateOfChangeMeasure a rdfs:Class.
+ifc4:IfcTendon a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcReinforcingElement.
+ifc4:IfcTendonAnchor a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcReinforcingElement.
+ifc4:IfcTendonAnchorType a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcReinforcingElementType.
+ifc4:IfcTendonType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcReinforcingElementType.
+ifc4:IfcTessellatedFaceSet a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcTessellatedItem.
+ifc4:IfcTessellatedItem a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcText a rdfs:Class.
+ifc4:IfcTextAlignment a rdfs:Class.
+ifc4:IfcTextDecoration a rdfs:Class.
+ifc4:IfcTextFontName a rdfs:Class.
+ifc4:IfcTextLiteral a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcTextLiteralWithExtent a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcTextLiteral.
+ifc4:IfcTextStyle a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcPresentationStyle.
+ifc4:IfcTextStyleFontModel a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcPreDefinedTextFont.
+ifc4:IfcTextStyleForDefinedFont a rdfs:Class;
+                                rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcTextStyleTextModel a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcTextTransformation a rdfs:Class.
+ifc4:IfcTextureCoordinate a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcTextureCoordinateGenerator a rdfs:Class;
+                                   rdfs:subClassOf ifc4:IfcTextureCoordinate.
+ifc4:IfcTextureMap a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcTextureCoordinate.
+ifc4:IfcTextureVertex a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcTextureVertexList a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcPresentationItem.
+ifc4:IfcThermalAdmittanceMeasure a rdfs:Class.
+ifc4:IfcThermalConductivityMeasure a rdfs:Class.
+ifc4:IfcThermalExpansionCoefficientMeasure a rdfs:Class.
+ifc4:IfcThermalResistanceMeasure a rdfs:Class.
+ifc4:IfcThermalTransmittanceMeasure a rdfs:Class.
+ifc4:IfcThermodynamicTemperatureMeasure a rdfs:Class.
+ifc4:IfcTime a rdfs:Class.
+ifc4:IfcTimeMeasure a rdfs:Class.
+ifc4:IfcTimePeriod a rdfs:Class.
+ifc4:IfcTimeSeries a rdfs:Class.
+ifc4:IfcTimeSeriesValue a rdfs:Class.
+ifc4:IfcTimeStamp a rdfs:Class.
+ifc4:IfcTopologicalRepresentationItem a rdfs:Class;
+                                      rdfs:subClassOf ifc4:IfcRepresentationItem.
+ifc4:IfcTopologyRepresentation a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcShapeModel.
+ifc4:IfcToroidalSurface a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcElementarySurface.
+ifc4:IfcTorqueMeasure a rdfs:Class.
+ifc4:IfcTransformer a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcTransformerType a rdfs:Class;
+                        rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcTransitionCurveSegment2D a rdfs:Class;
+                                 rdfs:subClassOf ifc4:IfcCurveSegment2D.
+ifc4:IfcTransportElement a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcTransportElementType a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcElementType.
+ifc4:IfcTrapeziumProfileDef a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcTriangulatedFaceSet a rdfs:Class;
+                            rdfs:subClassOf ifc4:IfcTessellatedFaceSet.
+ifc4:IfcTriangulatedIrregularNetwork a rdfs:Class;
+                                     rdfs:subClassOf ifc4:IfcTriangulatedFaceSet.
+ifc4:IfcTrimmedCurve a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcBoundedCurve.
+ifc4:IfcTubeBundle a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcTubeBundleType a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcTypeObject a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcObjectDefinition.
+ifc4:IfcTypeProcess a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcTypeObject.
+ifc4:IfcTypeProduct a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcTypeObject.
+ifc4:IfcTypeResource a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcTypeObject.
+ifc4:IfcURIReference a rdfs:Class.
+ifc4:IfcUShapeProfileDef a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcUnitAssignment a rdfs:Class.
+ifc4:IfcUnitaryControlElement a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcDistributionControlElement.
+ifc4:IfcUnitaryControlElementType a rdfs:Class;
+                                  rdfs:subClassOf ifc4:IfcDistributionControlElementType.
+ifc4:IfcUnitaryEquipment a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcEnergyConversionDevice.
+ifc4:IfcUnitaryEquipmentType a rdfs:Class;
+                             rdfs:subClassOf ifc4:IfcEnergyConversionDeviceType.
+ifc4:IfcValve a rdfs:Class;
+              rdfs:subClassOf ifc4:IfcFlowController.
+ifc4:IfcValveType a rdfs:Class;
+                  rdfs:subClassOf ifc4:IfcFlowControllerType.
+ifc4:IfcVaporPermeabilityMeasure a rdfs:Class.
+ifc4:IfcVector a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcGeometricRepresentationItem.
+ifc4:IfcVertex a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcTopologicalRepresentationItem.
+ifc4:IfcVertexLoop a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcLoop.
+ifc4:IfcVertexPoint a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcVertex.
+ifc4:IfcVibrationIsolator a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcElementComponent.
+ifc4:IfcVibrationIsolatorType a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcElementComponentType.
+ifc4:IfcVirtualElement a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcElement.
+ifc4:IfcVirtualGridIntersection a rdfs:Class.
+ifc4:IfcVoidingFeature a rdfs:Class;
+                       rdfs:subClassOf ifc4:IfcFeatureElementSubtraction.
+ifc4:IfcVolumeMeasure a rdfs:Class.
+ifc4:IfcVolumetricFlowRateMeasure a rdfs:Class.
+ifc4:IfcWall a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcWallElementedCase a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcWall.
+ifc4:IfcWallStandardCase a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcWall.
+ifc4:IfcWallType a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcWarpingConstantMeasure a rdfs:Class.
+ifc4:IfcWarpingMomentMeasure a rdfs:Class.
+ifc4:IfcWasteTerminal a rdfs:Class;
+                      rdfs:subClassOf ifc4:IfcFlowTerminal.
+ifc4:IfcWasteTerminalType a rdfs:Class;
+                          rdfs:subClassOf ifc4:IfcFlowTerminalType.
+ifc4:IfcWindow a rdfs:Class;
+               rdfs:subClassOf ifc4:IfcBuildingElement.
+ifc4:IfcWindowLiningProperties a rdfs:Class;
+                               rdfs:subClassOf ifc4:IfcPreDefinedPropertySet.
+ifc4:IfcWindowPanelProperties a rdfs:Class;
+                              rdfs:subClassOf ifc4:IfcPreDefinedPropertySet.
+ifc4:IfcWindowStandardCase a rdfs:Class;
+                           rdfs:subClassOf ifc4:IfcWindow.
+ifc4:IfcWindowStyle a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcTypeProduct.
+ifc4:IfcWindowType a rdfs:Class;
+                   rdfs:subClassOf ifc4:IfcBuildingElementType.
+ifc4:IfcWorkCalendar a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcControl.
+ifc4:IfcWorkControl a rdfs:Class;
+                    rdfs:subClassOf ifc4:IfcControl.
+ifc4:IfcWorkPlan a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcWorkControl.
+ifc4:IfcWorkSchedule a rdfs:Class;
+                     rdfs:subClassOf ifc4:IfcWorkControl.
+ifc4:IfcWorkTime a rdfs:Class;
+                 rdfs:subClassOf ifc4:IfcSchedulingTime.
+ifc4:IfcZShapeProfileDef a rdfs:Class;
+                         rdfs:subClassOf ifc4:IfcParameterizedProfileDef.
+ifc4:IfcZone a rdfs:Class;
+             rdfs:subClassOf ifc4:IfcSystem.
+ifc4:addresses a rdf:Property;
+               rdfs:domain ifc4:IfcOrganization,
+                           ifc4:IfcPerson.
+ifc4:approvedObjects a rdf:Property;
+                     rdfs:domain ifc4:IfcApproval.
+ifc4:approvedResources a rdf:Property;
+                       rdfs:domain ifc4:IfcApproval.
+ifc4:assignedItems a rdf:Property;
+                   rdfs:domain ifc4:IfcPresentationLayerAssignment,
+                               ifc4:IfcPresentationLayerWithStyle.
+ifc4:assignedStructuralActivity a rdf:Property;
+                                rdfs:domain ifc4:IfcStructuralItem.
+ifc4:assignedToFlowElement a rdf:Property;
+                           rdfs:domain ifc4:IfcDistributionControlElement.
+ifc4:assignedToStructuralItem a rdf:Property;
+                              rdfs:domain ifc4:IfcStructuralActivity.
+ifc4:associatedTo a rdf:Property;
+                  rdfs:domain ifc4:IfcMaterialDefinition,
+                              ifc4:IfcMaterialUsageDefinition.
+ifc4:boundedBy a rdf:Property;
+               rdfs:domain ifc4:IfcExternalSpatialElement,
+                           ifc4:IfcSpace.
+ifc4:classificationForObjects a rdf:Property;
+                              rdfs:domain ifc4:IfcClassification.
+ifc4:classificationRefForObjects a rdf:Property;
+                                 rdfs:domain ifc4:IfcClassificationReference.
+ifc4:connectedBy a rdf:Property;
+                 rdfs:domain ifc4:IfcStructuralMember.
+ifc4:connectedFrom a rdf:Property;
+                   rdfs:domain ifc4:IfcElement,
+                               ifc4:IfcPort.
+ifc4:connectedTo a rdf:Property;
+                 rdfs:domain ifc4:IfcElement,
+                             ifc4:IfcPort.
+ifc4:connectsStructuralMembers a rdf:Property;
+                               rdfs:domain ifc4:IfcStructuralConnection.
+ifc4:containedIn a rdf:Property;
+                 rdfs:domain ifc4:IfcPort.
+ifc4:containedInStructure a rdf:Property;
+                          rdfs:domain ifc4:IfcElement,
+                                      ifc4:IfcPositioningElement,
+                                      ifc4:IfcAnnotation,
+                                      ifc4:IfcGrid.
+ifc4:containsElements a rdf:Property;
+                      rdfs:domain ifc4:IfcSpatialElement.
+ifc4:contextOfItems a rdf:Property;
+                    rdfs:domain ifc4:IfcRepresentation,
+                                ifc4:IfcShapeModel,
+                                ifc4:IfcShapeRepresentation,
+                                ifc4:IfcStyleModel,
+                                ifc4:IfcStyledRepresentation,
+                                ifc4:IfcTopologyRepresentation.
+ifc4:controls a rdf:Property;
+              rdfs:domain ifc4:IfcControl.
+ifc4:correspondingBoundary a rdf:Property;
+                           rdfs:domain ifc4:IfcRelSpaceBoundary2ndLevel.
+ifc4:corresponds a rdf:Property;
+                 rdfs:domain ifc4:IfcRelSpaceBoundary2ndLevel.
+ifc4:coversElements a rdf:Property;
+                    rdfs:domain ifc4:IfcCovering.
+ifc4:coversSpaces a rdf:Property;
+                  rdfs:domain ifc4:IfcCovering.
+ifc4:declares a rdf:Property;
+              rdfs:domain ifc4:IfcObject,
+                          ifc4:IfcContext.
+ifc4:decomposes a rdf:Property;
+                rdfs:domain ifc4:IfcObjectDefinition.
+ifc4:defines a rdf:Property;
+             rdfs:domain ifc4:IfcPropertySetTemplate.
+ifc4:definesOccurrence a rdf:Property;
+                       rdfs:domain ifc4:IfcPropertySetDefinition.
+ifc4:definesType a rdf:Property;
+                 rdfs:domain ifc4:IfcPropertySetDefinition.
+ifc4:dependantProperty a rdf:Property;
+                       rdfs:domain ifc4:IfcPropertyDependencyRelationship.
+ifc4:dependingProperty a rdf:Property;
+                       rdfs:domain ifc4:IfcPropertyDependencyRelationship.
+ifc4:documentInfoForObjects a rdf:Property;
+                            rdfs:domain ifc4:IfcDocumentInformation.
+ifc4:documentRefForObjects a rdf:Property;
+                           rdfs:domain ifc4:IfcDocumentReference.
+ifc4:engagedIn a rdf:Property;
+               rdfs:domain ifc4:IfcPerson.
+ifc4:engages a rdf:Property;
+             rdfs:domain ifc4:IfcOrganization.
+ifc4:externalReferenceForResources a rdf:Property;
+                                   rdfs:domain ifc4:IfcExternalReference.
+ifc4:faces a rdf:Property;
+           rdfs:domain ifc4:IfcPolygonalFaceSet.
+ifc4:fillsVoids a rdf:Property;
+                rdfs:domain ifc4:IfcElement.
+ifc4:hasApprovals a rdf:Property;
+                  rdfs:domain ifc4:IfcProperty.
+ifc4:hasAssignments a rdf:Property;
+                    rdfs:domain ifc4:IfcObjectDefinition.
+ifc4:hasAssociations a rdf:Property;
+                     rdfs:domain ifc4:IfcObjectDefinition,
+                                 ifc4:IfcPropertyDefinition.
+ifc4:hasColours a rdf:Property;
+                rdfs:domain ifc4:IfcTessellatedFaceSet.
+ifc4:hasConstraints a rdf:Property;
+                    rdfs:domain ifc4:IfcProperty.
+ifc4:hasContext a rdf:Property;
+                rdfs:domain ifc4:IfcObjectDefinition,
+                            ifc4:IfcPropertyDefinition.
+ifc4:hasControlElements a rdf:Property;
+                        rdfs:domain ifc4:IfcDistributionFlowElement.
+ifc4:hasCoordinateOperation a rdf:Property;
+                            rdfs:domain ifc4:IfcCoordinateReferenceSystem,
+                                        ifc4:IfcGeometricRepresentationContext.
+ifc4:hasCoverings a rdf:Property;
+                  rdfs:domain ifc4:IfcElement,
+                              ifc4:IfcSpace.
+ifc4:hasDocumentReferences a rdf:Property;
+                           rdfs:domain ifc4:IfcDocumentInformation.
+ifc4:hasExternalReference a rdf:Property;
+                          rdfs:domain ifc4:IfcProfileDef,
+                                      ifc4:IfcContextDependentUnit,
+                                      ifc4:IfcConversionBasedUnit,
+                                      ifc4:IfcTimeSeries,
+                                      ifc4:IfcAppliedValue,
+                                      ifc4:IfcActorRole.
+ifc4:hasExternalReferences a rdf:Property;
+                           rdfs:domain ifc4:IfcPhysicalQuantity,
+                                       ifc4:IfcPropertyAbstraction,
+                                       ifc4:IfcMaterialDefinition,
+                                       ifc4:IfcConstraint,
+                                       ifc4:IfcApproval.
+ifc4:hasFillings a rdf:Property;
+                 rdfs:domain ifc4:IfcOpeningElement.
+ifc4:hasIntersections a rdf:Property;
+                      rdfs:domain ifc4:IfcGridAxis.
+ifc4:hasLibraryReferences a rdf:Property;
+                          rdfs:domain ifc4:IfcLibraryInformation.
+ifc4:hasOpenings a rdf:Property;
+                 rdfs:domain ifc4:IfcElement.
+ifc4:hasPorts a rdf:Property;
+              rdfs:domain ifc4:IfcDistributionElement.
+ifc4:hasProjections a rdf:Property;
+                    rdfs:domain ifc4:IfcElement.
+ifc4:hasProperties a rdf:Property;
+                   rdfs:domain ifc4:IfcComplexProperty,
+                               ifc4:IfcProfileDef,
+                               ifc4:IfcMaterialDefinition,
+                               ifc4:IfcPropertySet.
+ifc4:hasPropertySets a rdf:Property;
+                     rdfs:domain ifc4:IfcTypeObject,
+                                 ifc4:IfcTypeProduct,
+                                 ifc4:IfcElementType,
+                                 ifc4:IfcBuildingElementType,
+                                 ifc4:IfcFootingType,
+                                 ifc4:IfcPileType,
+                                 ifc4:IfcElementComponentType,
+                                 ifc4:IfcReinforcingElementType,
+                                 ifc4:IfcReinforcingBarType,
+                                 ifc4:IfcReinforcingMeshType,
+                                 ifc4:IfcTendonAnchorType,
+                                 ifc4:IfcTendonType,
+                                 ifc4:IfcFurnishingElementType,
+                                 ifc4:IfcFurnitureType,
+                                 ifc4:IfcSystemFurnitureElementType,
+                                 ifc4:IfcBuildingElementPartType,
+                                 ifc4:IfcDiscreteAccessoryType,
+                                 ifc4:IfcFastenerType,
+                                 ifc4:IfcMechanicalFastenerType,
+                                 ifc4:IfcDistributionElementType,
+                                 ifc4:IfcDistributionFlowElementType,
+                                 ifc4:IfcDistributionChamberElementType,
+                                 ifc4:IfcDistributionControlElementType,
+                                 ifc4:IfcEnergyConversionDeviceType,
+                                 ifc4:IfcFlowControllerType,
+                                 ifc4:IfcFlowFittingType,
+                                 ifc4:IfcFlowMovingDeviceType,
+                                 ifc4:IfcFlowSegmentType,
+                                 ifc4:IfcFlowStorageDeviceType,
+                                 ifc4:IfcFlowTerminalType,
+                                 ifc4:IfcFlowTreatmentDeviceType,
+                                 ifc4:IfcBeamType,
+                                 ifc4:IfcBuildingElementProxyType,
+                                 ifc4:IfcChimneyType,
+                                 ifc4:IfcColumnType,
+                                 ifc4:IfcCoveringType,
+                                 ifc4:IfcCurtainWallType,
+                                 ifc4:IfcDoorType,
+                                 ifc4:IfcMemberType,
+                                 ifc4:IfcPlateType,
+                                 ifc4:IfcRailingType,
+                                 ifc4:IfcRampFlightType,
+                                 ifc4:IfcRampType,
+                                 ifc4:IfcRoofType,
+                                 ifc4:IfcShadingDeviceType,
+                                 ifc4:IfcSlabType,
+                                 ifc4:IfcStairFlightType,
+                                 ifc4:IfcStairType,
+                                 ifc4:IfcWallType,
+                                 ifc4:IfcWindowType,
+                                 ifc4:IfcCivilElementType,
+                                 ifc4:IfcElementAssemblyType,
+                                 ifc4:IfcGeographicElementType,
+                                 ifc4:IfcSpatialElementType,
+                                 ifc4:IfcSpatialStructureElementType,
+                                 ifc4:IfcSpaceType,
+                                 ifc4:IfcSpatialZoneType,
+                                 ifc4:IfcTransportElementType,
+                                 ifc4:IfcTypeProcess,
+                                 ifc4:IfcEventType,
+                                 ifc4:IfcProcedureType,
+                                 ifc4:IfcTaskType,
+                                 ifc4:IfcFireSuppressionTerminalType,
+                                 ifc4:IfcInterceptorType,
+                                 ifc4:IfcSanitaryTerminalType,
+                                 ifc4:IfcStackTerminalType,
+                                 ifc4:IfcWasteTerminalType,
+                                 ifc4:IfcTypeResource,
+                                 ifc4:IfcAirTerminalBoxType,
+                                 ifc4:IfcAirTerminalType,
+                                 ifc4:IfcAirToAirHeatRecoveryType,
+                                 ifc4:IfcBoilerType,
+                                 ifc4:IfcBurnerType,
+                                 ifc4:IfcChillerType,
+                                 ifc4:IfcCoilType,
+                                 ifc4:IfcCompressorType,
+                                 ifc4:IfcCondenserType,
+                                 ifc4:IfcCooledBeamType,
+                                 ifc4:IfcCoolingTowerType,
+                                 ifc4:IfcDamperType,
+                                 ifc4:IfcDuctFittingType,
+                                 ifc4:IfcDuctSegmentType,
+                                 ifc4:IfcDuctSilencerType,
+                                 ifc4:IfcEngineType,
+                                 ifc4:IfcEvaporativeCoolerType,
+                                 ifc4:IfcEvaporatorType,
+                                 ifc4:IfcFanType,
+                                 ifc4:IfcFilterType,
+                                 ifc4:IfcFlowMeterType,
+                                 ifc4:IfcHeatExchangerType,
+                                 ifc4:IfcHumidifierType,
+                                 ifc4:IfcMedicalDeviceType,
+                                 ifc4:IfcPipeFittingType,
+                                 ifc4:IfcPipeSegmentType,
+                                 ifc4:IfcPumpType,
+                                 ifc4:IfcSpaceHeaterType,
+                                 ifc4:IfcTankType,
+                                 ifc4:IfcTubeBundleType,
+                                 ifc4:IfcUnitaryEquipmentType,
+                                 ifc4:IfcValveType,
+                                 ifc4:IfcVibrationIsolatorType,
+                                 ifc4:IfcAudioVisualApplianceType,
+                                 ifc4:IfcCableCarrierFittingType,
+                                 ifc4:IfcCableCarrierSegmentType,
+                                 ifc4:IfcCableFittingType,
+                                 ifc4:IfcCableSegmentType,
+                                 ifc4:IfcCommunicationsApplianceType,
+                                 ifc4:IfcElectricApplianceType,
+                                 ifc4:IfcElectricDistributionBoardType,
+                                 ifc4:IfcElectricFlowStorageDeviceType,
+                                 ifc4:IfcElectricGeneratorType,
+                                 ifc4:IfcElectricMotorType,
+                                 ifc4:IfcElectricTimeControlType,
+                                 ifc4:IfcJunctionBoxType,
+                                 ifc4:IfcLampType,
+                                 ifc4:IfcLightFixtureType,
+                                 ifc4:IfcMotorConnectionType,
+                                 ifc4:IfcOutletType,
+                                 ifc4:IfcProtectiveDeviceTrippingUnitType,
+                                 ifc4:IfcProtectiveDeviceType,
+                                 ifc4:IfcSolarDeviceType,
+                                 ifc4:IfcSwitchingDeviceType,
+                                 ifc4:IfcTransformerType,
+                                 ifc4:IfcConstructionResourceType,
+                                 ifc4:IfcConstructionEquipmentResourceType,
+                                 ifc4:IfcConstructionMaterialResourceType,
+                                 ifc4:IfcConstructionProductResourceType,
+                                 ifc4:IfcCrewResourceType,
+                                 ifc4:IfcLaborResourceType,
+                                 ifc4:IfcSubContractResourceType,
+                                 ifc4:IfcActuatorType,
+                                 ifc4:IfcAlarmType,
+                                 ifc4:IfcControllerType,
+                                 ifc4:IfcFlowInstrumentType,
+                                 ifc4:IfcSensorType,
+                                 ifc4:IfcUnitaryControlElementType,
+                                 ifc4:IfcDoorStyle,
+                                 ifc4:IfcWindowStyle.
+ifc4:hasPropertyTemplates a rdf:Property;
+                          rdfs:domain ifc4:IfcComplexPropertyTemplate,
+                                      ifc4:IfcPropertySetTemplate.
+ifc4:hasQuantities a rdf:Property;
+                   rdfs:domain ifc4:IfcPhysicalComplexQuantity.
+ifc4:hasReferences a rdf:Property;
+                   rdfs:domain ifc4:IfcClassification,
+                               ifc4:IfcClassificationReference.
+ifc4:hasRepresentation a rdf:Property;
+                       rdfs:domain ifc4:IfcMaterial.
+ifc4:hasResults a rdf:Property;
+                rdfs:domain ifc4:IfcStructuralAnalysisModel.
+ifc4:hasShapeAspects a rdf:Property;
+                     rdfs:domain ifc4:IfcProductDefinitionShape,
+                                 ifc4:IfcRepresentationMap.
+ifc4:hasSubContexts a rdf:Property;
+                    rdfs:domain ifc4:IfcGeometricRepresentationContext.
+ifc4:hasTextureMaps a rdf:Property;
+                    rdfs:domain ifc4:IfcFace.
+ifc4:hasTextures a rdf:Property;
+                 rdfs:domain ifc4:IfcTessellatedFaceSet.
+ifc4:horizontal a rdf:Property;
+                rdfs:domain ifc4:IfcAlignmentCurve.
+ifc4:innerBoundaries a rdf:Property;
+                     rdfs:domain ifc4:IfcRelSpaceBoundary1stLevel.
+ifc4:interferesElements a rdf:Property;
+                        rdfs:domain ifc4:IfcElement.
+ifc4:intersectingAxes a rdf:Property;
+                      rdfs:domain ifc4:IfcVirtualGridIntersection.
+ifc4:isActingUpon a rdf:Property;
+                  rdfs:domain ifc4:IfcActor.
+ifc4:isConnectionRealization a rdf:Property;
+                             rdfs:domain ifc4:IfcElement.
+ifc4:isDeclaredBy a rdf:Property;
+                  rdfs:domain ifc4:IfcObject.
+ifc4:isDecomposedBy a rdf:Property;
+                    rdfs:domain ifc4:IfcObjectDefinition.
+ifc4:isDefinedBy a rdf:Property;
+                 rdfs:domain ifc4:IfcObject,
+                             ifc4:IfcPropertySetDefinition,
+                             ifc4:IfcContext.
+ifc4:isGroupedBy a rdf:Property;
+                 rdfs:domain ifc4:IfcGroup.
+ifc4:isInterferedByElements a rdf:Property;
+                            rdfs:domain ifc4:IfcElement.
+ifc4:isMappedBy a rdf:Property;
+                rdfs:domain ifc4:IfcSurfaceTexture.
+ifc4:isNestedBy a rdf:Property;
+                rdfs:domain ifc4:IfcObjectDefinition.
+ifc4:isPointedTo a rdf:Property;
+                 rdfs:domain ifc4:IfcDocumentInformation.
+ifc4:isPointer a rdf:Property;
+               rdfs:domain ifc4:IfcDocumentInformation.
+ifc4:isPredecessorTo a rdf:Property;
+                     rdfs:domain ifc4:IfcProcess.
+ifc4:isRelatedBy a rdf:Property;
+                 rdfs:domain ifc4:IfcOrganization.
+ifc4:isRelatedWith a rdf:Property;
+                   rdfs:domain ifc4:IfcMaterial,
+                               ifc4:IfcApproval.
+ifc4:isSuccessorFrom a rdf:Property;
+                     rdfs:domain ifc4:IfcProcess.
+ifc4:isTypedBy a rdf:Property;
+               rdfs:domain ifc4:IfcObject.
+ifc4:item a rdf:Property;
+          rdfs:domain ifc4:IfcStyledItem.
+ifc4:layerAssignment a rdf:Property;
+                     rdfs:domain ifc4:IfcRepresentationItem.
+ifc4:layerAssignments a rdf:Property;
+                      rdfs:domain ifc4:IfcRepresentation.
+ifc4:libraryInfoForObjects a rdf:Property;
+                           rdfs:domain ifc4:IfcLibraryInformation.
+ifc4:libraryRefForObjects a rdf:Property;
+                          rdfs:domain ifc4:IfcLibraryReference.
+ifc4:loadGroupFor a rdf:Property;
+                  rdfs:domain ifc4:IfcStructuralLoadGroup.
+ifc4:loadedBy a rdf:Property;
+              rdfs:domain ifc4:IfcStructuralAnalysisModel.
+ifc4:mapUsage a rdf:Property;
+              rdfs:domain ifc4:IfcRepresentationMap.
+ifc4:mappedRepresentation a rdf:Property;
+                          rdfs:domain ifc4:IfcRepresentationMap.
+ifc4:mappedTo a rdf:Property;
+              rdfs:domain ifc4:IfcIndexedColourMap,
+                          ifc4:IfcIndexedTextureMap,
+                          ifc4:IfcIndexedTriangleTextureMap,
+                          ifc4:IfcTextureMap.
+ifc4:mappingSource a rdf:Property;
+                   rdfs:domain ifc4:IfcMappedItem.
+ifc4:maps a rdf:Property;
+          rdfs:domain ifc4:IfcTextureCoordinate,
+                      ifc4:IfcIndexedTextureMap,
+                      ifc4:IfcIndexedTriangleTextureMap,
+                      ifc4:IfcTextureCoordinateGenerator,
+                      ifc4:IfcTextureMap.
+ifc4:material a rdf:Property;
+              rdfs:domain ifc4:IfcMaterialProperties.
+ifc4:materialConstituents a rdf:Property;
+                          rdfs:domain ifc4:IfcMaterialConstituentSet.
+ifc4:materialLayers a rdf:Property;
+                    rdfs:domain ifc4:IfcMaterialLayerSet.
+ifc4:materialProfiles a rdf:Property;
+                      rdfs:domain ifc4:IfcMaterialProfileSet.
+ifc4:nests a rdf:Property;
+           rdfs:domain ifc4:IfcObjectDefinition.
+ifc4:objectPlacement a rdf:Property;
+                     rdfs:domain ifc4:IfcProduct,
+                                 ifc4:IfcElement,
+                                 ifc4:IfcBuildingElement,
+                                 ifc4:IfcFooting,
+                                 ifc4:IfcPile,
+                                 ifc4:IfcElementComponent,
+                                 ifc4:IfcReinforcingElement,
+                                 ifc4:IfcReinforcingBar,
+                                 ifc4:IfcReinforcingMesh,
+                                 ifc4:IfcFeatureElement,
+                                 ifc4:IfcSurfaceFeature,
+                                 ifc4:IfcTendon,
+                                 ifc4:IfcTendonAnchor,
+                                 ifc4:IfcFeatureElementSubtraction,
+                                 ifc4:IfcVoidingFeature,
+                                 ifc4:IfcStructuralActivity,
+                                 ifc4:IfcStructuralAction,
+                                 ifc4:IfcStructuralItem,
+                                 ifc4:IfcStructuralConnection,
+                                 ifc4:IfcStructuralCurveAction,
+                                 ifc4:IfcStructuralCurveConnection,
+                                 ifc4:IfcStructuralMember,
+                                 ifc4:IfcStructuralCurveMember,
+                                 ifc4:IfcStructuralCurveMemberVarying,
+                                 ifc4:IfcStructuralReaction,
+                                 ifc4:IfcStructuralCurveReaction,
+                                 ifc4:IfcStructuralLinearAction,
+                                 ifc4:IfcStructuralSurfaceAction,
+                                 ifc4:IfcStructuralPlanarAction,
+                                 ifc4:IfcStructuralPointAction,
+                                 ifc4:IfcStructuralPointConnection,
+                                 ifc4:IfcStructuralPointReaction,
+                                 ifc4:IfcStructuralSurfaceConnection,
+                                 ifc4:IfcStructuralSurfaceMember,
+                                 ifc4:IfcStructuralSurfaceMemberVarying,
+                                 ifc4:IfcStructuralSurfaceReaction,
+                                 ifc4:IfcFurnishingElement,
+                                 ifc4:IfcFurniture,
+                                 ifc4:IfcSystemFurnitureElement,
+                                 ifc4:IfcBuildingElementPart,
+                                 ifc4:IfcDiscreteAccessory,
+                                 ifc4:IfcFastener,
+                                 ifc4:IfcMechanicalFastener,
+                                 ifc4:IfcDistributionElement,
+                                 ifc4:IfcDistributionFlowElement,
+                                 ifc4:IfcDistributionChamberElement,
+                                 ifc4:IfcDistributionControlElement,
+                                 ifc4:IfcPort,
+                                 ifc4:IfcDistributionPort,
+                                 ifc4:IfcEnergyConversionDevice,
+                                 ifc4:IfcFlowController,
+                                 ifc4:IfcFlowFitting,
+                                 ifc4:IfcFlowMovingDevice,
+                                 ifc4:IfcFlowSegment,
+                                 ifc4:IfcFlowStorageDevice,
+                                 ifc4:IfcFlowTerminal,
+                                 ifc4:IfcFlowTreatmentDevice,
+                                 ifc4:IfcBeam,
+                                 ifc4:IfcBeamStandardCase,
+                                 ifc4:IfcBuildingElementProxy,
+                                 ifc4:IfcChimney,
+                                 ifc4:IfcColumn,
+                                 ifc4:IfcColumnStandardCase,
+                                 ifc4:IfcCovering,
+                                 ifc4:IfcCurtainWall,
+                                 ifc4:IfcDoor,
+                                 ifc4:IfcDoorStandardCase,
+                                 ifc4:IfcMember,
+                                 ifc4:IfcMemberStandardCase,
+                                 ifc4:IfcPlate,
+                                 ifc4:IfcPlateStandardCase,
+                                 ifc4:IfcRailing,
+                                 ifc4:IfcRamp,
+                                 ifc4:IfcRampFlight,
+                                 ifc4:IfcRoof,
+                                 ifc4:IfcShadingDevice,
+                                 ifc4:IfcSlab,
+                                 ifc4:IfcSlabElementedCase,
+                                 ifc4:IfcSlabStandardCase,
+                                 ifc4:IfcStair,
+                                 ifc4:IfcStairFlight,
+                                 ifc4:IfcWall,
+                                 ifc4:IfcWallElementedCase,
+                                 ifc4:IfcWallStandardCase,
+                                 ifc4:IfcWindow,
+                                 ifc4:IfcWindowStandardCase,
+                                 ifc4:IfcPositioningElement,
+                                 ifc4:IfcLinearPositioningElement,
+                                 ifc4:IfcAlignment,
+                                 ifc4:IfcAnnotation,
+                                 ifc4:IfcSpatialElement,
+                                 ifc4:IfcSpatialStructureElement,
+                                 ifc4:IfcBuilding,
+                                 ifc4:IfcBuildingStorey,
+                                 ifc4:IfcCivilElement,
+                                 ifc4:IfcElementAssembly,
+                                 ifc4:IfcExternalSpatialStructureElement,
+                                 ifc4:IfcExternalSpatialElement,
+                                 ifc4:IfcFeatureElementAddition,
+                                 ifc4:IfcGeographicElement,
+                                 ifc4:IfcGrid,
+                                 ifc4:IfcOpeningElement,
+                                 ifc4:IfcOpeningStandardCase,
+                                 ifc4:IfcProjectionElement,
+                                 ifc4:IfcReferent,
+                                 ifc4:IfcSite,
+                                 ifc4:IfcSpace,
+                                 ifc4:IfcSpatialZone,
+                                 ifc4:IfcTransportElement,
+                                 ifc4:IfcVirtualElement,
+                                 ifc4:IfcFireSuppressionTerminal,
+                                 ifc4:IfcInterceptor,
+                                 ifc4:IfcSanitaryTerminal,
+                                 ifc4:IfcStackTerminal,
+                                 ifc4:IfcWasteTerminal,
+                                 ifc4:IfcProxy,
+                                 ifc4:IfcAirTerminal,
+                                 ifc4:IfcAirTerminalBox,
+                                 ifc4:IfcAirToAirHeatRecovery,
+                                 ifc4:IfcBoiler,
+                                 ifc4:IfcBurner,
+                                 ifc4:IfcChiller,
+                                 ifc4:IfcCoil,
+                                 ifc4:IfcCompressor,
+                                 ifc4:IfcCondenser,
+                                 ifc4:IfcCooledBeam,
+                                 ifc4:IfcCoolingTower,
+                                 ifc4:IfcDamper,
+                                 ifc4:IfcDuctFitting,
+                                 ifc4:IfcDuctSegment,
+                                 ifc4:IfcDuctSilencer,
+                                 ifc4:IfcEngine,
+                                 ifc4:IfcEvaporativeCooler,
+                                 ifc4:IfcEvaporator,
+                                 ifc4:IfcFan,
+                                 ifc4:IfcFilter,
+                                 ifc4:IfcFlowMeter,
+                                 ifc4:IfcHeatExchanger,
+                                 ifc4:IfcHumidifier,
+                                 ifc4:IfcMedicalDevice,
+                                 ifc4:IfcPipeFitting,
+                                 ifc4:IfcPipeSegment,
+                                 ifc4:IfcPump,
+                                 ifc4:IfcSpaceHeater,
+                                 ifc4:IfcTank,
+                                 ifc4:IfcTubeBundle,
+                                 ifc4:IfcUnitaryEquipment,
+                                 ifc4:IfcValve,
+                                 ifc4:IfcVibrationIsolator,
+                                 ifc4:IfcAudioVisualAppliance,
+                                 ifc4:IfcCableCarrierFitting,
+                                 ifc4:IfcCableCarrierSegment,
+                                 ifc4:IfcCableFitting,
+                                 ifc4:IfcCableSegment,
+                                 ifc4:IfcCommunicationsAppliance,
+                                 ifc4:IfcElectricAppliance,
+                                 ifc4:IfcElectricDistributionBoard,
+                                 ifc4:IfcElectricFlowStorageDevice,
+                                 ifc4:IfcElectricGenerator,
+                                 ifc4:IfcElectricMotor,
+                                 ifc4:IfcElectricTimeControl,
+                                 ifc4:IfcJunctionBox,
+                                 ifc4:IfcLamp,
+                                 ifc4:IfcLightFixture,
+                                 ifc4:IfcMotorConnection,
+                                 ifc4:IfcOutlet,
+                                 ifc4:IfcProtectiveDevice,
+                                 ifc4:IfcProtectiveDeviceTrippingUnit,
+                                 ifc4:IfcSolarDevice,
+                                 ifc4:IfcSwitchingDevice,
+                                 ifc4:IfcTransformer,
+                                 ifc4:IfcActuator,
+                                 ifc4:IfcAlarm,
+                                 ifc4:IfcController,
+                                 ifc4:IfcFlowInstrument,
+                                 ifc4:IfcSensor,
+                                 ifc4:IfcUnitaryControlElement.
+ifc4:ofOrganization a rdf:Property;
+                    rdfs:domain ifc4:IfcAddress.
+ifc4:ofPerson a rdf:Property;
+              rdfs:domain ifc4:IfcAddress.
+ifc4:ofProductRepresentation a rdf:Property;
+                             rdfs:domain ifc4:IfcRepresentation.
+ifc4:ofShapeAspect a rdf:Property;
+                   rdfs:domain ifc4:IfcShapeModel.
+ifc4:operatesOn a rdf:Property;
+                rdfs:domain ifc4:IfcProcess,
+                            ifc4:IfcTypeProcess.
+ifc4:parentBoundary a rdf:Property;
+                    rdfs:domain ifc4:IfcRelSpaceBoundary1stLevel,
+                                ifc4:IfcRelSpaceBoundary2ndLevel.
+ifc4:parentContext a rdf:Property;
+                   rdfs:domain ifc4:IfcGeometricRepresentationSubContext.
+ifc4:partOfComplex a rdf:Property;
+                   rdfs:domain ifc4:IfcPhysicalQuantity,
+                               ifc4:IfcProperty.
+ifc4:partOfComplexTemplate a rdf:Property;
+                           rdfs:domain ifc4:IfcPropertyTemplate.
+ifc4:partOfProductDefinitionShape a rdf:Property;
+                                  rdfs:domain ifc4:IfcShapeAspect.
+ifc4:partOfPset a rdf:Property;
+                rdfs:domain ifc4:IfcProperty.
+ifc4:partOfPsetTemplate a rdf:Property;
+                        rdfs:domain ifc4:IfcPropertyTemplate.
+ifc4:partOfU a rdf:Property;
+             rdfs:domain ifc4:IfcGridAxis.
+ifc4:partOfV a rdf:Property;
+             rdfs:domain ifc4:IfcGridAxis.
+ifc4:partOfW a rdf:Property;
+             rdfs:domain ifc4:IfcGridAxis.
+ifc4:placementRelTo a rdf:Property;
+                    rdfs:domain ifc4:IfcLocalPlacement.
+ifc4:placesObject a rdf:Property;
+                  rdfs:domain ifc4:IfcObjectPlacement.
+ifc4:profileDefinition a rdf:Property;
+                       rdfs:domain ifc4:IfcProfileProperties.
+ifc4:projectsElements a rdf:Property;
+                      rdfs:domain ifc4:IfcFeatureElementAddition.
+ifc4:propertiesForConstraint a rdf:Property;
+                             rdfs:domain ifc4:IfcConstraint.
+ifc4:propertyDependsOn a rdf:Property;
+                       rdfs:domain ifc4:IfcProperty.
+ifc4:propertyForDependance a rdf:Property;
+                           rdfs:domain ifc4:IfcProperty.
+ifc4:providesBoundaries a rdf:Property;
+                        rdfs:domain ifc4:IfcElement.
+ifc4:realizingElements a rdf:Property;
+                       rdfs:domain ifc4:IfcRelConnectsWithRealizingElements.
+ifc4:referencedBy a rdf:Property;
+                  rdfs:domain ifc4:IfcProduct,
+                              ifc4:IfcTypeProduct.
+ifc4:referencedByPlacements a rdf:Property;
+                            rdfs:domain ifc4:IfcObjectPlacement.
+ifc4:referencedDocument a rdf:Property;
+                        rdfs:domain ifc4:IfcDocumentReference.
+ifc4:referencedInStructures a rdf:Property;
+                            rdfs:domain ifc4:IfcElement.
+ifc4:referencedLibrary a rdf:Property;
+                       rdfs:domain ifc4:IfcLibraryReference.
+ifc4:referencedSource a rdf:Property;
+                      rdfs:domain ifc4:IfcClassificationReference.
+ifc4:referencesElements a rdf:Property;
+                        rdfs:domain ifc4:IfcSpatialElement.
+ifc4:relatedApprovals a rdf:Property;
+                      rdfs:domain ifc4:IfcApprovalRelationship.
+ifc4:relatedBuildingElement a rdf:Property;
+                            rdfs:domain ifc4:IfcRelFillsElement,
+                                        ifc4:IfcRelSpaceBoundary,
+                                        ifc4:IfcRelSpaceBoundary1stLevel,
+                                        ifc4:IfcRelSpaceBoundary2ndLevel.
+ifc4:relatedBuildings a rdf:Property;
+                      rdfs:domain ifc4:IfcRelServicesBuildings.
+ifc4:relatedControlElements a rdf:Property;
+                            rdfs:domain ifc4:IfcRelFlowControlElements.
+ifc4:relatedCoverings a rdf:Property;
+                      rdfs:domain ifc4:IfcRelCoversBldgElements,
+                                  ifc4:IfcRelCoversSpaces.
+ifc4:relatedDefinitions a rdf:Property;
+                        rdfs:domain ifc4:IfcRelDeclares.
+ifc4:relatedDocuments a rdf:Property;
+                      rdfs:domain ifc4:IfcDocumentInformationRelationship.
+ifc4:relatedElement a rdf:Property;
+                    rdfs:domain ifc4:IfcRelConnectsElements,
+                                ifc4:IfcRelConnectsPathElements,
+                                ifc4:IfcRelConnectsPortToElement,
+                                ifc4:IfcRelConnectsWithRealizingElements,
+                                ifc4:IfcRelInterferesElements.
+ifc4:relatedElements a rdf:Property;
+                     rdfs:domain ifc4:IfcRelContainedInSpatialStructure,
+                                 ifc4:IfcRelReferencedInSpatialStructure.
+ifc4:relatedFeatureElement a rdf:Property;
+                           rdfs:domain ifc4:IfcRelProjectsElement.
+ifc4:relatedMaterials a rdf:Property;
+                      rdfs:domain ifc4:IfcMaterialRelationship.
+ifc4:relatedObjects a rdf:Property;
+                    rdfs:domain ifc4:IfcRelAssociates,
+                                ifc4:IfcRelAssociatesMaterial,
+                                ifc4:IfcRelAggregates,
+                                ifc4:IfcRelAssigns,
+                                ifc4:IfcRelAssignsToActor,
+                                ifc4:IfcRelAssignsToControl,
+                                ifc4:IfcRelAssignsToGroup,
+                                ifc4:IfcRelAssignsToGroupByFactor,
+                                ifc4:IfcRelAssignsToProcess,
+                                ifc4:IfcRelAssignsToProduct,
+                                ifc4:IfcRelAssignsToResource,
+                                ifc4:IfcRelAssociatesClassification,
+                                ifc4:IfcRelAssociatesDocument,
+                                ifc4:IfcRelAssociatesLibrary,
+                                ifc4:IfcRelDefinesByObject,
+                                ifc4:IfcRelDefinesByProperties,
+                                ifc4:IfcRelDefinesByType,
+                                ifc4:IfcRelNests,
+                                ifc4:IfcRelAssociatesApproval,
+                                ifc4:IfcRelAssociatesConstraint.
+ifc4:relatedOpeningElement a rdf:Property;
+                           rdfs:domain ifc4:IfcRelVoidsElement.
+ifc4:relatedOrganizations a rdf:Property;
+                          rdfs:domain ifc4:IfcOrganizationRelationship.
+ifc4:relatedPort a rdf:Property;
+                 rdfs:domain ifc4:IfcRelConnectsPorts.
+ifc4:relatedProcess a rdf:Property;
+                    rdfs:domain ifc4:IfcRelSequence.
+ifc4:relatedPropertySets a rdf:Property;
+                         rdfs:domain ifc4:IfcRelDefinesByTemplate.
+ifc4:relatedResourceObjects a rdf:Property;
+                            rdfs:domain ifc4:IfcExternalReferenceRelationship,
+                                        ifc4:IfcResourceConstraintRelationship,
+                                        ifc4:IfcResourceApprovalRelationship.
+ifc4:relatedStructuralActivity a rdf:Property;
+                               rdfs:domain ifc4:IfcRelConnectsStructuralActivity.
+ifc4:relatedStructuralConnection a rdf:Property;
+                                 rdfs:domain ifc4:IfcRelConnectsStructuralMember,
+                                             ifc4:IfcRelConnectsWithEccentricity.
+ifc4:relates a rdf:Property;
+             rdfs:domain ifc4:IfcApproval,
+                         ifc4:IfcOrganization.
+ifc4:relatesTo a rdf:Property;
+               rdfs:domain ifc4:IfcMaterial.
+ifc4:relatingActor a rdf:Property;
+                   rdfs:domain ifc4:IfcRelAssignsToActor.
+ifc4:relatingApproval a rdf:Property;
+                      rdfs:domain ifc4:IfcRelAssociatesApproval,
+                                  ifc4:IfcApprovalRelationship,
+                                  ifc4:IfcResourceApprovalRelationship.
+ifc4:relatingBuildingElement a rdf:Property;
+                             rdfs:domain ifc4:IfcRelCoversBldgElements,
+                                         ifc4:IfcRelVoidsElement.
+ifc4:relatingClassification a rdf:Property;
+                            rdfs:domain ifc4:IfcRelAssociatesClassification.
+ifc4:relatingConstraint a rdf:Property;
+                        rdfs:domain ifc4:IfcResourceConstraintRelationship.
+ifc4:relatingContext a rdf:Property;
+                     rdfs:domain ifc4:IfcRelDeclares.
+ifc4:relatingControl a rdf:Property;
+                     rdfs:domain ifc4:IfcRelAssignsToControl.
+ifc4:relatingDocument a rdf:Property;
+                      rdfs:domain ifc4:IfcRelAssociatesDocument,
+                                  ifc4:IfcDocumentInformationRelationship.
+ifc4:relatingElement a rdf:Property;
+                     rdfs:domain ifc4:IfcRelConnectsStructuralActivity,
+                                 ifc4:IfcRelConnectsElements,
+                                 ifc4:IfcRelConnectsPathElements,
+                                 ifc4:IfcRelConnectsWithRealizingElements,
+                                 ifc4:IfcRelInterferesElements,
+                                 ifc4:IfcRelProjectsElement.
+ifc4:relatingFlowElement a rdf:Property;
+                         rdfs:domain ifc4:IfcRelFlowControlElements.
+ifc4:relatingGroup a rdf:Property;
+                   rdfs:domain ifc4:IfcRelAssignsToGroup,
+                               ifc4:IfcRelAssignsToGroupByFactor.
+ifc4:relatingLibrary a rdf:Property;
+                     rdfs:domain ifc4:IfcRelAssociatesLibrary.
+ifc4:relatingMaterial a rdf:Property;
+                      rdfs:domain ifc4:IfcRelAssociatesMaterial,
+                                  ifc4:IfcMaterialRelationship.
+ifc4:relatingObject a rdf:Property;
+                    rdfs:domain ifc4:IfcRelAggregates,
+                                ifc4:IfcRelDefinesByObject,
+                                ifc4:IfcRelNests.
+ifc4:relatingOpeningElement a rdf:Property;
+                            rdfs:domain ifc4:IfcRelFillsElement.
+ifc4:relatingOrganization a rdf:Property;
+                          rdfs:domain ifc4:IfcOrganizationRelationship.
+ifc4:relatingPort a rdf:Property;
+                  rdfs:domain ifc4:IfcRelConnectsPorts,
+                              ifc4:IfcRelConnectsPortToElement.
+ifc4:relatingProcess a rdf:Property;
+                     rdfs:domain ifc4:IfcRelSequence,
+                                 ifc4:IfcRelAssignsToProcess.
+ifc4:relatingProduct a rdf:Property;
+                     rdfs:domain ifc4:IfcRelAssignsToProduct.
+ifc4:relatingPropertyDefinition a rdf:Property;
+                                rdfs:domain ifc4:IfcRelDefinesByProperties.
+ifc4:relatingReference a rdf:Property;
+                       rdfs:domain ifc4:IfcExternalReferenceRelationship.
+ifc4:relatingResource a rdf:Property;
+                      rdfs:domain ifc4:IfcRelAssignsToResource.
+ifc4:relatingSpace a rdf:Property;
+                   rdfs:domain ifc4:IfcRelCoversSpaces,
+                               ifc4:IfcRelSpaceBoundary,
+                               ifc4:IfcRelSpaceBoundary1stLevel,
+                               ifc4:IfcRelSpaceBoundary2ndLevel.
+ifc4:relatingStructuralMember a rdf:Property;
+                              rdfs:domain ifc4:IfcRelConnectsStructuralMember,
+                                          ifc4:IfcRelConnectsWithEccentricity.
+ifc4:relatingStructure a rdf:Property;
+                       rdfs:domain ifc4:IfcRelContainedInSpatialStructure,
+                                   ifc4:IfcRelReferencedInSpatialStructure.
+ifc4:relatingSystem a rdf:Property;
+                    rdfs:domain ifc4:IfcRelServicesBuildings.
+ifc4:relatingTemplate a rdf:Property;
+                      rdfs:domain ifc4:IfcRelDefinesByTemplate.
+ifc4:relatingType a rdf:Property;
+                  rdfs:domain ifc4:IfcRelDefinesByType.
+ifc4:representation a rdf:Property;
+                    rdfs:domain ifc4:IfcProduct,
+                                ifc4:IfcElement,
+                                ifc4:IfcBuildingElement,
+                                ifc4:IfcFooting,
+                                ifc4:IfcPile,
+                                ifc4:IfcElementComponent,
+                                ifc4:IfcReinforcingElement,
+                                ifc4:IfcReinforcingBar,
+                                ifc4:IfcReinforcingMesh,
+                                ifc4:IfcFeatureElement,
+                                ifc4:IfcSurfaceFeature,
+                                ifc4:IfcTendon,
+                                ifc4:IfcTendonAnchor,
+                                ifc4:IfcFeatureElementSubtraction,
+                                ifc4:IfcVoidingFeature,
+                                ifc4:IfcStructuralActivity,
+                                ifc4:IfcStructuralAction,
+                                ifc4:IfcStructuralItem,
+                                ifc4:IfcStructuralConnection,
+                                ifc4:IfcStructuralCurveAction,
+                                ifc4:IfcStructuralCurveConnection,
+                                ifc4:IfcStructuralMember,
+                                ifc4:IfcStructuralCurveMember,
+                                ifc4:IfcStructuralCurveMemberVarying,
+                                ifc4:IfcStructuralReaction,
+                                ifc4:IfcStructuralCurveReaction,
+                                ifc4:IfcStructuralLinearAction,
+                                ifc4:IfcStructuralSurfaceAction,
+                                ifc4:IfcStructuralPlanarAction,
+                                ifc4:IfcStructuralPointAction,
+                                ifc4:IfcStructuralPointConnection,
+                                ifc4:IfcStructuralPointReaction,
+                                ifc4:IfcStructuralSurfaceConnection,
+                                ifc4:IfcStructuralSurfaceMember,
+                                ifc4:IfcStructuralSurfaceMemberVarying,
+                                ifc4:IfcStructuralSurfaceReaction,
+                                ifc4:IfcFurnishingElement,
+                                ifc4:IfcFurniture,
+                                ifc4:IfcSystemFurnitureElement,
+                                ifc4:IfcBuildingElementPart,
+                                ifc4:IfcDiscreteAccessory,
+                                ifc4:IfcFastener,
+                                ifc4:IfcMechanicalFastener,
+                                ifc4:IfcDistributionElement,
+                                ifc4:IfcDistributionFlowElement,
+                                ifc4:IfcDistributionChamberElement,
+                                ifc4:IfcDistributionControlElement,
+                                ifc4:IfcPort,
+                                ifc4:IfcDistributionPort,
+                                ifc4:IfcEnergyConversionDevice,
+                                ifc4:IfcFlowController,
+                                ifc4:IfcFlowFitting,
+                                ifc4:IfcFlowMovingDevice,
+                                ifc4:IfcFlowSegment,
+                                ifc4:IfcFlowStorageDevice,
+                                ifc4:IfcFlowTerminal,
+                                ifc4:IfcFlowTreatmentDevice,
+                                ifc4:IfcBeam,
+                                ifc4:IfcBeamStandardCase,
+                                ifc4:IfcBuildingElementProxy,
+                                ifc4:IfcChimney,
+                                ifc4:IfcColumn,
+                                ifc4:IfcColumnStandardCase,
+                                ifc4:IfcCovering,
+                                ifc4:IfcCurtainWall,
+                                ifc4:IfcDoor,
+                                ifc4:IfcDoorStandardCase,
+                                ifc4:IfcMember,
+                                ifc4:IfcMemberStandardCase,
+                                ifc4:IfcPlate,
+                                ifc4:IfcPlateStandardCase,
+                                ifc4:IfcRailing,
+                                ifc4:IfcRamp,
+                                ifc4:IfcRampFlight,
+                                ifc4:IfcRoof,
+                                ifc4:IfcShadingDevice,
+                                ifc4:IfcSlab,
+                                ifc4:IfcSlabElementedCase,
+                                ifc4:IfcSlabStandardCase,
+                                ifc4:IfcStair,
+                                ifc4:IfcStairFlight,
+                                ifc4:IfcWall,
+                                ifc4:IfcWallElementedCase,
+                                ifc4:IfcWallStandardCase,
+                                ifc4:IfcWindow,
+                                ifc4:IfcWindowStandardCase,
+                                ifc4:IfcPositioningElement,
+                                ifc4:IfcLinearPositioningElement,
+                                ifc4:IfcAlignment,
+                                ifc4:IfcAnnotation,
+                                ifc4:IfcSpatialElement,
+                                ifc4:IfcSpatialStructureElement,
+                                ifc4:IfcBuilding,
+                                ifc4:IfcBuildingStorey,
+                                ifc4:IfcCivilElement,
+                                ifc4:IfcElementAssembly,
+                                ifc4:IfcExternalSpatialStructureElement,
+                                ifc4:IfcExternalSpatialElement,
+                                ifc4:IfcFeatureElementAddition,
+                                ifc4:IfcGeographicElement,
+                                ifc4:IfcGrid,
+                                ifc4:IfcOpeningElement,
+                                ifc4:IfcOpeningStandardCase,
+                                ifc4:IfcProjectionElement,
+                                ifc4:IfcReferent,
+                                ifc4:IfcSite,
+                                ifc4:IfcSpace,
+                                ifc4:IfcSpatialZone,
+                                ifc4:IfcTransportElement,
+                                ifc4:IfcVirtualElement,
+                                ifc4:IfcFireSuppressionTerminal,
+                                ifc4:IfcInterceptor,
+                                ifc4:IfcSanitaryTerminal,
+                                ifc4:IfcStackTerminal,
+                                ifc4:IfcWasteTerminal,
+                                ifc4:IfcProxy,
+                                ifc4:IfcAirTerminal,
+                                ifc4:IfcAirTerminalBox,
+                                ifc4:IfcAirToAirHeatRecovery,
+                                ifc4:IfcBoiler,
+                                ifc4:IfcBurner,
+                                ifc4:IfcChiller,
+                                ifc4:IfcCoil,
+                                ifc4:IfcCompressor,
+                                ifc4:IfcCondenser,
+                                ifc4:IfcCooledBeam,
+                                ifc4:IfcCoolingTower,
+                                ifc4:IfcDamper,
+                                ifc4:IfcDuctFitting,
+                                ifc4:IfcDuctSegment,
+                                ifc4:IfcDuctSilencer,
+                                ifc4:IfcEngine,
+                                ifc4:IfcEvaporativeCooler,
+                                ifc4:IfcEvaporator,
+                                ifc4:IfcFan,
+                                ifc4:IfcFilter,
+                                ifc4:IfcFlowMeter,
+                                ifc4:IfcHeatExchanger,
+                                ifc4:IfcHumidifier,
+                                ifc4:IfcMedicalDevice,
+                                ifc4:IfcPipeFitting,
+                                ifc4:IfcPipeSegment,
+                                ifc4:IfcPump,
+                                ifc4:IfcSpaceHeater,
+                                ifc4:IfcTank,
+                                ifc4:IfcTubeBundle,
+                                ifc4:IfcUnitaryEquipment,
+                                ifc4:IfcValve,
+                                ifc4:IfcVibrationIsolator,
+                                ifc4:IfcAudioVisualAppliance,
+                                ifc4:IfcCableCarrierFitting,
+                                ifc4:IfcCableCarrierSegment,
+                                ifc4:IfcCableFitting,
+                                ifc4:IfcCableSegment,
+                                ifc4:IfcCommunicationsAppliance,
+                                ifc4:IfcElectricAppliance,
+                                ifc4:IfcElectricDistributionBoard,
+                                ifc4:IfcElectricFlowStorageDevice,
+                                ifc4:IfcElectricGenerator,
+                                ifc4:IfcElectricMotor,
+                                ifc4:IfcElectricTimeControl,
+                                ifc4:IfcJunctionBox,
+                                ifc4:IfcLamp,
+                                ifc4:IfcLightFixture,
+                                ifc4:IfcMotorConnection,
+                                ifc4:IfcOutlet,
+                                ifc4:IfcProtectiveDevice,
+                                ifc4:IfcProtectiveDeviceTrippingUnit,
+                                ifc4:IfcSolarDevice,
+                                ifc4:IfcSwitchingDevice,
+                                ifc4:IfcTransformer,
+                                ifc4:IfcActuator,
+                                ifc4:IfcAlarm,
+                                ifc4:IfcController,
+                                ifc4:IfcFlowInstrument,
+                                ifc4:IfcSensor,
+                                ifc4:IfcUnitaryControlElement.
+ifc4:representationMap a rdf:Property;
+                       rdfs:domain ifc4:IfcRepresentation.
+ifc4:representations a rdf:Property;
+                     rdfs:domain ifc4:IfcProductRepresentation,
+                                 ifc4:IfcMaterialDefinitionRepresentation,
+                                 ifc4:IfcProductDefinitionShape.
+ifc4:representationsInContext a rdf:Property;
+                              rdfs:domain ifc4:IfcRepresentationContext.
+ifc4:representedMaterial a rdf:Property;
+                         rdfs:domain ifc4:IfcMaterialDefinitionRepresentation.
+ifc4:resourceOf a rdf:Property;
+                rdfs:domain ifc4:IfcResource,
+                            ifc4:IfcTypeResource.
+ifc4:resultForLoadGroup a rdf:Property;
+                        rdfs:domain ifc4:IfcStructuralResultGroup.
+ifc4:resultGroupFor a rdf:Property;
+                    rdfs:domain ifc4:IfcStructuralResultGroup.
+ifc4:segments a rdf:Property;
+              rdfs:domain ifc4:IfcCompositeCurve,
+                          ifc4:IfcCompositeCurveOnSurface,
+                          ifc4:IfcBoundaryCurve,
+                          ifc4:IfcOuterBoundaryCurve,
+                          ifc4:IfcAlignment2DHorizontal,
+                          ifc4:IfcAlignment2DVertical.
+ifc4:servicedBySystems a rdf:Property;
+                       rdfs:domain ifc4:IfcSpatialElement.
+ifc4:servicesBuildings a rdf:Property;
+                       rdfs:domain ifc4:IfcSystem.
+ifc4:shapeOfProduct a rdf:Property;
+                    rdfs:domain ifc4:IfcProductDefinitionShape.
+ifc4:shapeRepresentations a rdf:Property;
+                          rdfs:domain ifc4:IfcShapeAspect.
+ifc4:sourceCRS a rdf:Property;
+               rdfs:domain ifc4:IfcCoordinateOperation,
+                           ifc4:IfcMapConversion.
+ifc4:sourceOfResultGroup a rdf:Property;
+                         rdfs:domain ifc4:IfcStructuralLoadGroup.
+ifc4:styledByItem a rdf:Property;
+                  rdfs:domain ifc4:IfcRepresentationItem.
+ifc4:textures a rdf:Property;
+              rdfs:domain ifc4:IfcSurfaceStyleWithTextures.
+ifc4:theOrganization a rdf:Property;
+                     rdfs:domain ifc4:IfcPersonAndOrganization.
+ifc4:thePerson a rdf:Property;
+               rdfs:domain ifc4:IfcPersonAndOrganization.
+ifc4:toAlignmentCurve a rdf:Property;
+                      rdfs:domain ifc4:IfcAlignment2DHorizontal,
+                                  ifc4:IfcAlignment2DVertical.
+ifc4:toFaceSet a rdf:Property;
+               rdfs:domain ifc4:IfcIndexedPolygonalFace.
+ifc4:toHorizontal a rdf:Property;
+                  rdfs:domain ifc4:IfcAlignment2DHorizontalSegment.
+ifc4:toMaterialConstituentSet a rdf:Property;
+                              rdfs:domain ifc4:IfcMaterialConstituent.
+ifc4:toMaterialLayerSet a rdf:Property;
+                        rdfs:domain ifc4:IfcMaterialLayer.
+ifc4:toMaterialProfileSet a rdf:Property;
+                          rdfs:domain ifc4:IfcMaterialProfile.
+ifc4:toVertical a rdf:Property;
+                rdfs:domain ifc4:IfcAlignment2DVerticalSegment.
+ifc4:types a rdf:Property;
+           rdfs:domain ifc4:IfcTypeObject.
+ifc4:uAxes a rdf:Property;
+           rdfs:domain ifc4:IfcGrid.
+ifc4:usedInStyles a rdf:Property;
+                  rdfs:domain ifc4:IfcSurfaceTexture.
+ifc4:usingCurves a rdf:Property;
+                 rdfs:domain ifc4:IfcCompositeCurveSegment.
+ifc4:vAxes a rdf:Property;
+           rdfs:domain ifc4:IfcGrid.
+ifc4:vertical a rdf:Property;
+              rdfs:domain ifc4:IfcAlignmentCurve.
+ifc4:voidsElements a rdf:Property;
+                   rdfs:domain ifc4:IfcFeatureElementSubtraction.
+ifc4:wAxes a rdf:Property;
+           rdfs:domain ifc4:IfcGrid.

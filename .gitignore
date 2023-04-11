@@ -1,0 +1,15 @@
+/.vs
+/CBIMS.LDP.Def/bin
+/CBIMS.LDP.Def/obj
+/CBIMS.LDP.IFC.Loader/bin
+/CBIMS.LDP.IFC.Loader/obj
+/CBIMS.LDP.IFC.XbimLoader/bin
+/CBIMS.LDP.IFC.XbimLoader/obj
+/CBIMS.LDP.IFC/bin
+/CBIMS.LDP.IFC/obj
+/CBIMS.LDP.Repo/obj
+/CBIMS.LDP.Repo/bin
+/Run/obj
+/Run/bin
+/CBIMS.SPN/bin
+/CBIMS.SPN/obj

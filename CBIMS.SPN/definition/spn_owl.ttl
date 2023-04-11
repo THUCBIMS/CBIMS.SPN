@@ -1,0 +1,170 @@
+@base <http://www.cbims.org.cn/ns/spn#>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix spn: <http://www.cbims.org.cn/ns/spn#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+
+spn:Arc a owl:Class;
+        rdfs:subClassOf spn:Arc.restriction_1,
+                        spn:Arc.restriction_2,
+                        spn:Arc.restriction_3,
+                        spn:Arc.restriction_4.
+spn:Arc.restriction_1 a owl:Restriction;
+                      owl:cardinality 1 ;
+                      owl:onProperty spn:relPlace.
+spn:Arc.restriction_2 a owl:Restriction;
+                      owl:cardinality 1 ;
+                      owl:onProperty spn:relTransition.
+spn:Arc.restriction_3 a owl:Restriction;
+                      owl:maxCardinality 1 ;
+                      owl:minCardinality 0 ;
+                      owl:onProperty spn:arcExpr.
+spn:Arc.restriction_4 a owl:Restriction;
+                      owl:minCardinality 1 ;
+                      owl:onProperty spn:hasArg.
+spn:ArcP2T a owl:Class;
+           rdfs:subClassOf spn:Arc,
+                           spn:ArcP2T.restriction_1.
+spn:ArcP2T.restriction_1 a owl:Restriction;
+                         owl:maxCardinality 1 ;
+                         owl:minCardinality 0 ;
+                         owl:onProperty spn:arcExprInv.
+spn:ArcT2P a owl:Class;
+           rdfs:subClassOf spn:Arc.
+spn:ArgDef a owl:Class;
+           rdfs:subClassOf spn:ArgDef.restriction_1.
+spn:ArgDef.restriction_1 a owl:Restriction;
+                         owl:cardinality 1 ;
+                         owl:onProperty spn:argName.
+spn:ArgRule a owl:Class;
+            rdfs:subClassOf spn:Rule,
+                            spn:ArgRule.restriction_1.
+spn:ArgRule.restriction_1 a owl:Restriction;
+                          owl:minCardinality 1 ;
+                          owl:onProperty spn:hasArg.
+spn:CompoundRule a owl:Class;
+                 rdfs:subClassOf spn:Rule,
+                                 spn:CompoundRule.restriction_1.
+spn:CompoundRule.restriction_1 a owl:Restriction;
+                               owl:cardinality 1 ;
+                               owl:onProperty spn:operator.
+spn:CompoundRule_Operators a owl:DataRange;
+                           owl:oneOf spn:CompoundRule_Operators_0.
+spn:CompoundRule_Operators_0 rdf:first "AND";
+                             rdf:rest spn:CompoundRule_Operators_1;
+                             a rdf:List.
+spn:CompoundRule_Operators_1 rdf:first "OR";
+                             rdf:rest spn:CompoundRule_Operators_2.
+spn:CompoundRule_Operators_2 rdf:first "XOR";
+                             rdf:rest spn:CompoundRule_Operators_3.
+spn:CompoundRule_Operators_3 rdf:first "NOT";
+                             rdf:rest rdf:nil.
+spn:ConditionRule a owl:Class;
+                  rdfs:subClassOf spn:Rule,
+                                  spn:ConditionRule.restriction_1,
+                                  spn:ConditionRule.restriction_2,
+                                  spn:ConditionRule.restriction_3.
+spn:ConditionRule.restriction_1 a owl:Restriction;
+                                owl:cardinality 1 ;
+                                owl:onProperty spn:if.
+spn:ConditionRule.restriction_2 a owl:Restriction;
+                                owl:cardinality 1 ;
+                                owl:onProperty spn:then.
+spn:ConditionRule.restriction_3 a owl:Restriction;
+                                owl:cardinality 1 ;
+                                owl:onProperty spn:else.
+spn:ConstantRule a owl:Class;
+                 rdfs:subClassOf spn:Rule.
+spn:MultiNumProperty a rdfs:Class;
+                     rdfs:subClassOf rdf:Property.
+spn:Place a owl:Class;
+          rdfs:subClassOf ldp:Container,
+                          spn:Place.restriction_1,
+                          spn:Place.restriction_2.
+spn:Place.restriction_1 a owl:Restriction;
+                        owl:maxCardinality 1 ;
+                        owl:minCardinality 0 ;
+                        owl:onProperty spn:colorRule.
+spn:Place.restriction_2 a owl:Restriction;
+                        owl:maxCardinality 1 ;
+                        owl:minCardinality 0 ;
+                        owl:onProperty spn:initRule.
+spn:Rule a owl:Class.
+spn:SPARQLRule a owl:Class;
+               rdfs:subClassOf spn:Rule,
+                               spn:SPARQLRule.restriction_1.
+spn:SPARQLRule.restriction_1 a owl:Restriction;
+                             owl:cardinality 1 ;
+                             owl:onProperty spn:hasSPARQL.
+spn:Transition a owl:Class;
+               rdfs:subClassOf spn:Transition.restriction_1,
+                               spn:Transition.restriction_2.
+spn:Transition.restriction_1 a owl:Restriction;
+                             owl:maxCardinality 1 ;
+                             owl:minCardinality 0 ;
+                             owl:onProperty spn:guardRule.
+spn:Transition.restriction_2 a owl:Restriction;
+                             owl:minCardinality 1 ;
+                             owl:onProperty spn:hasArg.
+spn:arcExpr a owl:ObjectProperty;
+            rdfs:domain spn:Arc;
+            rdfs:range spn:Rule.
+spn:arcExprInv a owl:ObjectProperty;
+               rdfs:domain spn:ArcP2T;
+               rdfs:range spn:Rule.
+spn:argName a owl:DatatypeProperty;
+            rdfs:domain spn:ArgDef;
+            rdfs:range xsd:string.
+spn:argType a owl:ObjectProperty;
+            rdfs:domain spn:ArgDef;
+            rdfs:range rdfs:Class.
+spn:colorRule a owl:ObjectProperty;
+              rdfs:domain spn:Place;
+              rdfs:range spn:Rule.
+spn:else a owl:ObjectProperty;
+         rdfs:domain spn:ConditionRule;
+         rdfs:range spn:Rule.
+spn:guardRule a owl:ObjectProperty;
+              rdfs:domain spn:Transition;
+              rdfs:range spn:Rule.
+spn:hasArg a owl:ObjectProperty;
+           rdfs:domain spn:ArgRule,
+                       spn:Transition,
+                       spn:Arc;
+           rdfs:range spn:ArgDef.
+spn:hasSPARQL a owl:DatatypeProperty;
+              rdfs:domain spn:SPARQLRule;
+              rdfs:range xsd:string.
+spn:hasValue a rdf:Property;
+             rdfs:domain spn:ConstantRule;
+             rdfs:range rdfs:Resource.
+spn:if a owl:ObjectProperty;
+       rdfs:domain spn:ConditionRule;
+       rdfs:range spn:Rule.
+spn:initRule a owl:ObjectProperty;
+             rdfs:domain spn:Place;
+             rdfs:range spn:Rule.
+spn:multi_num a rdf:Property;
+              rdfs:domain spn:MultiNumProperty;
+              rdfs:range xsd:nonNegativeInteger.
+spn:multi_usage a rdf:Property;
+                rdfs:domain spn:MultiNumProperty;
+                rdfs:range xsd:nonNegativeInteger.
+spn:operator a owl:DatatypeProperty;
+             rdfs:domain spn:CompoundRule;
+             rdfs:range spn:CompoundRule_Operators.
+spn:relPlace a owl:ObjectProperty;
+             rdfs:domain spn:Arc;
+             rdfs:range spn:Place.
+spn:relTransition a owl:ObjectProperty;
+                  rdfs:domain spn:Arc;
+                  rdfs:range spn:Transition.
+spn:subRule a owl:ObjectProperty;
+            rdfs:domain spn:CompoundRule;
+            rdfs:range spn:Rule.
+spn:then a owl:ObjectProperty;
+         rdfs:domain spn:ConditionRule;
+         rdfs:range spn:Rule.
