@@ -27,8 +27,8 @@ The project uses the following dependencies from the NuGet:
 
 Other resources contained in the repository:
 
-* `example_data/Office-compressed.7z/Office-compressed.ifc` - An example IFC file from the NIBS "Common Building Information Model Files and Tools" (https://www.wbdg.org/bim/cobie/common-bim-files). The model is conterted from IFC2X3 to IFC4 and merged into a single file.
-* `CBIMS.LDP.IFC/Resource/ifcowl_ifc4.ttl` - The ifcOWL definitions for IFC4 (https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL).
+* `example_data/Office-compressed.7z/Office-compressed.ifc` - An example IFC file from the US National Institute of Building Sciences (NIBS) "Common Building Information Model Files and Tools" (https://www.wbdg.org/bim/cobie/common-bim-files). The model is converted from 3 IFC2X3 files and merged into one IFC4file.
+* `CBIMS.LDP.IFC/Resource/ifcowl_ifc4.ttl` - The buildingSMART ifcOWL definitions for IFC4 schema (https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL).
 
 
 ## Folders in the repository
