@@ -11,25 +11,25 @@ Please refer to:
 
 *Liu H, Song X Y, Gao G, Zhang H H, Liu Y S, Gu M.* 
 **Modeling and Validating Temporal Rules with Semantic Petri-Net for Digital Twins.**
+Advanced Engineering Informatics 57 (2023): 102099.
+DOI: https://doi.org/10.1016/j.aei.2023.102099
+
+*Liu H, Song X Y, Gao G, Zhang H H, Liu Y S, Gu M.* 
+**Modeling and Validating Temporal Rules with Semantic Petri-Net for Digital Twins.**
 International Workshop on Intelligent Computing in Engineering (EG-ICE), 2022:23-33. 
 DOI: https://doi.org/10.7146/aul.455.c193
 
 
 ## Dependencies and resources
 
-The project uses the following dependencies from the NuGet:
+The project relies on `CBIMS.LDP` libraries (https://github.com/highan911/CBIMS.LDP).  
+On compiling this project, please put the folder adjacent to `CBIMS.LDP`.   
+Please refer to the README file in `CBIMS.LDP` for the details about its dependencies.
 
-* `dotNetRDF` (https://github.com/dotnetrdf)
-* `Xbim` (https://github.com/xBimTeam/XbimEssentials, https://github.com/xBimTeam/XbimGeometry)
-* `MathNet.Numerics` (https://github.com/mathnet/mathnet-numerics)
-* `Newtonsoft.Json` (https://github.com/JamesNK/Newtonsoft.Json)
-* `RTree` (https://github.com/drorgl/cspatialindexrt)
 
 Other resources contained in the repository:
 
 * `example_data/Office-compressed.7z/Office-compressed.ifc` - An example IFC file from the US National Institute of Building Sciences (NIBS) "Common Building Information Model Files and Tools" (https://www.wbdg.org/bim/cobie/common-bim-files). The model is converted from 3 IFC2X3 files and merged into one IFC4file.
-* `CBIMS.LDP.IFC/Resource/ifcowl_ifc4.ttl` - The buildingSMART ifcOWL definitions for IFC4 schema (https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL).
-
 
 ## Folders in the repository
 
@@ -37,25 +37,15 @@ Other resources contained in the repository:
 
 `Run` contains the scripts for running the SPN test cases. 
 
-Dependencies included in the repository:
-
-* `CBIMS.LDP.Def` - Commonly used RDFS/OWL definitions, and classes for interact with the dotNetRDF toolkit.
-* `CBIMS.LDP.Repo` - Classes for implementing the Linked Data Platform (LDP) containers.
-* `CBIMS.LDP.IFC` - Abstract classes for manipulating the Industry Foundation Classes (IFC) data.
-* `CBIMS.LDP.IFC.XbimLoader` - Loading IFC data using the Xbim toolkit.
-
-Dependencies loaded as binary library:
-
-* `lib/CBIMS.CommonGeom` - Library for simple geometry calculations.
-
-
 ## Usage
 
 [TODO]
 
 ## License
 
-[TODO]
+CBIMS.SPN libraries use `GNU Lesser General Public License (LGPL)`. 
+Please refer to:
+https://www.gnu.org/licenses/lgpl-3.0.en.html
 
 ## About CBIMS
 

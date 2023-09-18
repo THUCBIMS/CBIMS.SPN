@@ -1,0 +1,13 @@
+<Project>
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<IncludeSymbols>true</IncludeSymbols>
+		<Platforms>AnyCPU;x64</Platforms>
+		<Authors>CBIMS</Authors>
+		<Company>School of Software, Tsinghua University</Company>
+		<VersionTime>$([System.DateTime]::UtcNow.ToString("yyMMddHHmmss"))</VersionTime>
+		<UseProjectReference>true</UseProjectReference>
+	</PropertyGroup>
+</Project>

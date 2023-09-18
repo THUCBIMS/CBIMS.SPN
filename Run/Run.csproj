@@ -9,15 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-	  <PackageReference Include="Xbim.Geometry.Engine.Interop" Version="5.1.254" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	<PackageReference Include="Xbim.Geometry.Engine.Interop" Version="5.1.254" />
   </ItemGroup>
-
-
-  <ItemGroup>
-    <ProjectReference Include="..\CBIMS.LDP.IFC.XbimLoader\CBIMS.LDP.IFC.XbimLoader.csproj" />
-    <ProjectReference Include="..\CBIMS.LDP.IFC\CBIMS.LDP.IFC.csproj" />
-    <ProjectReference Include="..\CBIMS.SPN\CBIMS.SPN.csproj" />
+  <ItemGroup Condition="$(UseProjectReference)">
+	<ProjectReference Include="..\..\CBIMS.LDP\CBIMS.LDP.IFC.XbimLoader\CBIMS.LDP.IFC.XbimLoader.csproj" />
+	<ProjectReference Include="..\CBIMS.SPN\CBIMS.SPN.csproj" />
   </ItemGroup>
-
+  <ItemGroup Condition="!$(UseProjectReference)">
+	<PackageReference Include="CBIMS.LDP.IFC.XbimLoader" Version="0.3.0" />
+	<PackageReference Include="CBIMS.SPN" Version="0.3.0" />
+  </ItemGroup>
 </Project>
