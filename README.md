@@ -22,7 +22,7 @@ DOI: https://doi.org/10.7146/aul.455.c193
 
 ## Dependencies and resources
 
-The project relies on `CBIMS.LDP` libraries (https://github.com/highan911/CBIMS.LDP).  
+The project relies on `CBIMS.LDP` libraries (https://github.com/THUCBIMS/CBIMS.LDP).  
 On compiling this project, please put the folder adjacent to `CBIMS.LDP`.   
 Please refer to the README file in `CBIMS.LDP` for the details about its dependencies.
 
